@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <ESCP_Sload_ThrassianFogReleased>A Thrassian fog settles over the area. It will last {0} days.</ESCP_Sload_ThrassianFogReleased>
+    <ESCP_Sload_ThrassianFogAlert>Thrassian fog</ESCP_Sload_ThrassianFogAlert>
+    <ESCP_Sload_ThrassianFogAlertDesc>A fog of Thrassian miasma hangs over this area for {0} more days. Raiders who arrive before it lifts will likely be carrying the Thrassian Plague.</ESCP_Sload_ThrassianFogAlertDesc>
+    <ESCP_Sload_ElixirAlreadyUsed>{PAWN_nameDef} already has the benefit of this elixir.</ESCP_Sload_ElixirAlreadyUsed>
+    <ESCP_Sload_ElixirNotNeeded>{PAWN_nameDef} can already raise a thrall.</ESCP_Sload_ElixirNotNeeded>
+    <ESCP_Sload_ImproveThrallChance>\n\nChance to raise each skill: {0} with minor passion, {1} without passion. Skills with major passion always rise.</ESCP_Sload_ImproveThrallChance>
+
+</LanguageData>

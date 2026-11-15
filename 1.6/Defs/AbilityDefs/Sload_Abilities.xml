@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <AbilityGroupDef>
+        <defName>ESCP_AbilityGroup_SloadThrall</defName>
+        <cooldownTicks>200000</cooldownTicks>
+    </AbilityGroupDef>
+
+    <AbilityGroupDef>
+        <defName>ESCP_AbilityGroup_SloadPlague</defName>
+        <cooldownTicks>800000</cooldownTicks>
+    </AbilityGroupDef>
+
+    <AbilityDef>
+        <defName>ESCP_Ability_Sload_RaiseThrall</defName>
+        <label>raise thrall</label>
+        <description>Puppeteer a fresh corpse, raising it as a thrall. Thralls feel no emotions and have no needs. The binding breaks if this Sload is downed or killed.</description>
+        <iconPath>UI/Abilities/ESCP_SloadCreateThrall</iconPath>
+        <groupDef>ESCP_AbilityGroup_SloadThrall</groupDef>
+        <jobDef>CastAbilityOnThingMelee</jobDef>
+        <stunTargetWhileCasting>true</stunTargetWhileCasting>
+        <showPsycastEffects>false</showPsycastEffects>
+        <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+        <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+        <warmupSound>AnimalCalm_Resolve</warmupSound>
+        <comps>
+            <li Class="CompProperties_AbilityFleckOnTarget">
+                <fleckDef>ESCP_Fleck_SloadMiasma</fleckDef>
+                <preCastTicks>99999</preCastTicks>
+            </li>
+            <li Class="ESCP_NecromanticThralls.CompProperties_ThrallCreate">
+                <hediff>ESCP_NecromanticThralls_Enthralled</hediff>
+                <disablerPrecept MayRequire="Ludeon.RimWorld.Ideology">ESCP_SloadThrallOpinion_Heretical</disablerPrecept>
+            </li>
+        </comps>
+        <verbProperties>
+            <verbClass>ESCP_NecromanticThralls.Verb_CastAbilityTouch_ThrallCreate</verbClass>
+            <drawAimPie>false</drawAimPie>
+            <range>-1</range>
+            <warmupTime>10</warmupTime>
+            <targetParams>
+                <canTargetItems>true</canTargetItems>
+                <canTargetSelf>false</canTargetSelf>
+                <canTargetPawns>false</canTargetPawns>
+                <canTargetBuildings>false</canTargetBuildings>
+                <mustBeSelectable>true</mustBeSelectable>
+                <mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable>
+            </targetParams>
+        </verbProperties>
+    </AbilityDef>
+
+    <AbilityDef>
+        <defName>ESCP_Ability_Sload_ImproveThrall</defName>
+        <label>improve thrall</label>
+        <description>Work new knowledge into one of this Sload's thralls. Each skill can rise by one level, with better odds the more intellectual the Sload is. Skills the thrall is passionate about always improve.</description>
+        <iconPath>UI/Abilities/ESCP_SloadImproveThrall</iconPath>
+        <groupDef>ESCP_AbilityGroup_SloadThrall</groupDef>
+        <jobDef>CastAbilityOnThingMelee</jobDef>
+        <stunTargetWhileCasting>true</stunTargetWhileCasting>
+        <showPsycastEffects>false</showPsycastEffects>
+        <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+        <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+        <warmupSound>AnimalCalm_Resolve</warmupSound>
+        <comps>
+            <li Class="CompProperties_AbilityFleckOnTarget">
+                <fleckDef>ESCP_Fleck_SloadMiasma</fleckDef>
+                <preCastTicks>99999</preCastTicks>
+            </li>
+            <li Class="ESCP.Sload.CompProperties_AbilityImproveThrall">
+                <skill>Intellectual</skill>
+                <chancePerLevel>0.05</chancePerLevel>
+            </li>
+        </comps>
+        <verbProperties>
+            <verbClass>Verb_CastAbilityTouch</verbClass>
+            <drawAimPie>false</drawAimPie>
+            <range>-1</range>
+            <warmupTime>10</warmupTime>
+            <targetParams>
+                <canTargetSelf>false</canTargetSelf>
+                <canTargetPawns>true</canTargetPawns>
+                <canTargetBuildings>false</canTargetBuildings>
+                <canTargetAnimals>true</canTargetAnimals>
+                <canTargetHumans>true</canTargetHumans>
+                <canTargetMechs>false</canTargetMechs>
+                <mustBeSelectable>true</mustBeSelectable>
+                <mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable>
+            </targetParams>
+        </verbProperties>
+    </AbilityDef>
+
+    <AbilityDef>
+        <defName>ESCP_Ability_Sload_ThrassianCloud</defName>
+        <label>Thrassian cloud</label>
+        <description>Release a large cloud of Thrassian miasma, giving the Thrassian Plague to anyone caught inside.</description>
+        <iconPath>UI/Abilities/ESCP_SloadReleasePlague</iconPath>
+        <groupDef>ESCP_AbilityGroup_SloadPlague</groupDef>
+        <targetRequired>false</targetRequired>
+        <stunTargetWhileCasting>true</stunTargetWhileCasting>
+        <showPsycastEffects>false</showPsycastEffects>
+        <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+        <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+        <warmupSound>AnimalCalm_Resolve</warmupSound>
+        <comps>
+            <li Class="ESCP_RaceTools.CompProperties_ReleaseGas">
+                <gasDef>ESCP_Thing_ThrassianMiasma</gasDef>
+                <radius>9.9</radius>
+            </li>
+            <li Class="CompProperties_AbilityFleckOnTarget">
+                <fleckDef>ESCP_Fleck_SloadMiasma</fleckDef>
+                <preCastTicks>99999</preCastTicks>
+            </li>
+        </comps>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <warmupTime>10</warmupTime>
+            <range>9.9</range>
+            <drawAimPie>false</drawAimPie>
+            <requireLineOfSight>false</requireLineOfSight>
+            <targetParams>
+                <canTargetSelf>true</canTargetSelf>
+                <canTargetPawns>false</canTargetPawns>
+                <canTargetBuildings>false</canTargetBuildings>
+                <canTargetLocations>true</canTargetLocations>
+            </targetParams>
+        </verbProperties>
+    </AbilityDef>
+
+    <AbilityDef>
+        <defName>ESCP_Ability_Sload_ThrassianFog</defName>
+        <label>Thrassian fog</label>
+        <description>Release a vast cloud of Thrassian miasma into the sky, leaving a dense fog over the area for 5 days. Raiders who arrive while the fog lingers will most likely be carrying the Thrassian Plague.</description>
+        <iconPath>UI/Abilities/ESCP_SloadReleaseMiasma</iconPath>
+        <groupDef>ESCP_AbilityGroup_SloadPlague</groupDef>
+        <targetRequired>false</targetRequired>
+        <stunTargetWhileCasting>true</stunTargetWhileCasting>
+        <showPsycastEffects>false</showPsycastEffects>
+        <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+        <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+        <warmupSound>AnimalCalm_Resolve</warmupSound>
+        <comps>
+            <li Class="ESCP.Sload.CompProperties_AbilityThrassianFog">
+                <days>5</days>
+            </li>
+            <li Class="CompProperties_AbilityFleckOnTarget">
+                <fleckDef>ESCP_Fleck_SloadMiasmaLong</fleckDef>
+                <preCastTicks>99999</preCastTicks>
+            </li>
+        </comps>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <warmupTime>30</warmupTime>
+            <drawAimPie>false</drawAimPie>
+            <requireLineOfSight>false</requireLineOfSight>
+            <range>0</range>
+            <targetParams>
+                <canTargetSelf>true</canTargetSelf>
+                <canTargetPawns>false</canTargetPawns>
+                <canTargetBuildings>false</canTargetBuildings>
+            </targetParams>
+        </verbProperties>
+    </AbilityDef>
+
+</Defs>

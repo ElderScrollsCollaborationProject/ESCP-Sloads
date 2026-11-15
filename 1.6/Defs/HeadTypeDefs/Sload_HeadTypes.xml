@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <HeadTypeDef ParentName="AverageBase">
+        <defName>ESCP_Head_Sload</defName>
+        <randomChosen>false</randomChosen>
+        <graphicPath>Things/Pawn/Humanlike/ESCP_Sload/Head/Sload_normal</graphicPath>
+    </HeadTypeDef>
+
+</Defs>

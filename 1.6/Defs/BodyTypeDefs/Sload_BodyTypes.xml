@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <BodyTypeDef>
+        <defName>ESCP_Sload</defName>
+        <bodyNakedGraphicPath>Things/Pawn/Humanlike/ESCP_Sload/Body/Naked_ESCP_Sload</bodyNakedGraphicPath>
+        <bodyDessicatedGraphicPath>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Fat</bodyDessicatedGraphicPath>
+        <headOffset>(0.09, 0.34)</headOffset>
+        <bedOffset>0</bedOffset>
+    </BodyTypeDef>
+
+</Defs>

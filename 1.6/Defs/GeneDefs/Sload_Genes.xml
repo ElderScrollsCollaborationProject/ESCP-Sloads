@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <GeneDef>
+        <defName>ESCP_Gene_Sload_Body</defName>
+        <canGenerateInGeneSet>false</canGenerateInGeneSet>
+        <label>Sload body</label>
+        <description>Carriers are huge, boneless slugs with a broad head and a thick, trailing tail. They grow no hair.</description>
+        <iconPath>UI/Icons/Genes/Gene_HairStyleBaldOnly</iconPath>
+        <displayCategory>Cosmetic</displayCategory>
+        <biostatCpx>0</biostatCpx>
+        <tattoosVisible>false</tattoosVisible>
+        <exclusionTags>
+            <li>Head</li>
+            <li>HairStyle</li>
+            <li>Tail</li>
+        </exclusionTags>
+        <forcedHeadTypes>
+            <li>ESCP_Head_Sload</li>
+        </forcedHeadTypes>
+        <hairTagFilter>
+            <whitelist>true</whitelist>
+            <tags>
+                <li>Bald</li>
+            </tags>
+        </hairTagFilter>
+        <beardTagFilter>
+            <whitelist>true</whitelist>
+            <tags>
+                <li>NoBeard</li>
+            </tags>
+        </beardTagFilter>
+        <renderNodeProperties>
+            <li>
+                <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+                <texPath>Things/Pawn/Humanlike/ESCP_Sload/Tail/SloadTail</texPath>
+                <colorType>Skin</colorType>
+                <parentTagDef>Body</parentTagDef>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <drawData>
+                    <defaultData>
+                        <layer>-2</layer>
+                    </defaultData>
+                    <dataNorth>
+                        <offset>(0, 0, -0.75)</offset>
+                        <layer>-2</layer>
+                    </dataNorth>
+                    <dataEast>
+                        <offset>(-0.9, 0, -0.45)</offset>
+                        <layer>-2</layer>
+                    </dataEast>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>ESCP_Gene_Sload_Necromancy</defName>
+        <canGenerateInGeneSet>false</canGenerateInGeneSet>
+        <label>Sload necromancy</label>
+        <description>Carriers can bind fresh corpses as thralls. Thralls feel nothing and need nothing, but the binding breaks if their master goes down. The more intellectual the Sload, the more thralls it can hold.</description>
+        <geneClass>ESCP_NecromanticThralls.Gene_Necromancer</geneClass>
+        <iconPath>UI/Abilities/ESCP_SloadCreateThrall</iconPath>
+        <displayCategory>Ability</displayCategory>
+        <biostatCpx>3</biostatCpx>
+        <biostatMet>-2</biostatMet>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>ESCP_Gene_Sload_Emotionless</defName>
+        <canGenerateInGeneSet>false</canGenerateInGeneSet>
+        <label>emotionless</label>
+        <description>Carriers feel almost nothing. Only hunger, pain, exhaustion and a few other plain needs reach them, and their mood stays high no matter what goes on around them.</description>
+        <iconPath>UI/Icons/Genes/Gene_DeadCalm</iconPath>
+        <displayCategory>Mood</displayCategory>
+        <biostatCpx>2</biostatCpx>
+        <biostatMet>-3</biostatMet>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>ESCP_Gene_Sload_DiseaseImmunity</defName>
+        <canGenerateInGeneSet>false</canGenerateInGeneSet>
+        <label>Sload disease immunity</label>
+        <description>Carriers cannot catch the flu, the plague, malaria, sleeping sickness or the Thrassian Plague their own kind made.</description>
+        <iconPath>UI/Icons/Genes/Gene_PerfectImmunity</iconPath>
+        <displayCategory>Healing</displayCategory>
+        <biostatCpx>2</biostatCpx>
+        <biostatMet>-2</biostatMet>
+        <makeImmuneTo>
+            <li>Flu</li>
+            <li>Plague</li>
+            <li>Malaria</li>
+            <li>SleepingSickness</li>
+            <li>ESCP_Hediff_ThrassianPlague</li>
+        </makeImmuneTo>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>ESCP_Gene_Sload_Skin1</defName>
+        <canGenerateInGeneSet>false</canGenerateInGeneSet>
+        <label>murky green Sload skin</label>
+        <labelShortAdj>green</labelShortAdj>
+        <description>Carriers have slimy murky green skin.</description>
+        <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+        <displayCategory>Cosmetic_Skin</displayCategory>
+        <skinColorOverride>(77, 92, 87)</skinColorOverride>
+        <exclusionTags>
+            <li>SkinColorOverride</li>
+        </exclusionTags>
+        <biostatCpx>0</biostatCpx>
+        <displayOrderInCategory>201</displayOrderInCategory>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>ESCP_Gene_Sload_Skin2</defName>
+        <canGenerateInGeneSet>false</canGenerateInGeneSet>
+        <label>gray green Sload skin</label>
+        <labelShortAdj>green</labelShortAdj>
+        <description>Carriers have slimy gray green skin.</description>
+        <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+        <displayCategory>Cosmetic_Skin</displayCategory>
+        <skinColorOverride>(91, 102, 100)</skinColorOverride>
+        <exclusionTags>
+            <li>SkinColorOverride</li>
+        </exclusionTags>
+        <biostatCpx>0</biostatCpx>
+        <displayOrderInCategory>202</displayOrderInCategory>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>ESCP_Gene_Sload_Skin3</defName>
+        <canGenerateInGeneSet>false</canGenerateInGeneSet>
+        <label>sea green Sload skin</label>
+        <labelShortAdj>green</labelShortAdj>
+        <description>Carriers have slimy sea green skin.</description>
+        <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+        <displayCategory>Cosmetic_Skin</displayCategory>
+        <skinColorOverride>(128, 154, 145)</skinColorOverride>
+        <exclusionTags>
+            <li>SkinColorOverride</li>
+        </exclusionTags>
+        <biostatCpx>0</biostatCpx>
+        <displayOrderInCategory>203</displayOrderInCategory>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>ESCP_Gene_Sload_Skin4</defName>
+        <canGenerateInGeneSet>false</canGenerateInGeneSet>
+        <label>dark plum Sload skin</label>
+        <labelShortAdj>plum</labelShortAdj>
+        <description>Carriers have slimy dark plum skin.</description>
+        <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+        <displayCategory>Cosmetic_Skin</displayCategory>
+        <skinColorOverride>(86, 51, 69)</skinColorOverride>
+        <exclusionTags>
+            <li>SkinColorOverride</li>
+        </exclusionTags>
+        <biostatCpx>0</biostatCpx>
+        <displayOrderInCategory>204</displayOrderInCategory>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>ESCP_Gene_Sload_Skin5</defName>
+        <canGenerateInGeneSet>false</canGenerateInGeneSet>
+        <label>rose Sload skin</label>
+        <labelShortAdj>rose</labelShortAdj>
+        <description>Carriers have slimy rose skin.</description>
+        <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+        <displayCategory>Cosmetic_Skin</displayCategory>
+        <skinColorOverride>(139, 85, 105)</skinColorOverride>
+        <exclusionTags>
+            <li>SkinColorOverride</li>
+        </exclusionTags>
+        <biostatCpx>0</biostatCpx>
+        <displayOrderInCategory>205</displayOrderInCategory>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>ESCP_Gene_Sload_Skin6</defName>
+        <canGenerateInGeneSet>false</canGenerateInGeneSet>
+        <label>deep plum Sload skin</label>
+        <labelShortAdj>plum</labelShortAdj>
+        <description>Carriers have slimy deep plum skin.</description>
+        <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+        <displayCategory>Cosmetic_Skin</displayCategory>
+        <skinColorOverride>(83, 57, 79)</skinColorOverride>
+        <exclusionTags>
+            <li>SkinColorOverride</li>
+        </exclusionTags>
+        <biostatCpx>0</biostatCpx>
+        <displayOrderInCategory>206</displayOrderInCategory>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>ESCP_Gene_Sload_Skin7</defName>
+        <canGenerateInGeneSet>false</canGenerateInGeneSet>
+        <label>slate blue Sload skin</label>
+        <labelShortAdj>blue</labelShortAdj>
+        <description>Carriers have slimy slate blue skin.</description>
+        <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+        <displayCategory>Cosmetic_Skin</displayCategory>
+        <skinColorOverride>(97, 112, 130)</skinColorOverride>
+        <exclusionTags>
+            <li>SkinColorOverride</li>
+        </exclusionTags>
+        <biostatCpx>0</biostatCpx>
+        <displayOrderInCategory>207</displayOrderInCategory>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>ESCP_Gene_Sload_Skin8</defName>
+        <canGenerateInGeneSet>false</canGenerateInGeneSet>
+        <label>teal Sload skin</label>
+        <labelShortAdj>teal</labelShortAdj>
+        <description>Carriers have slimy teal skin.</description>
+        <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+        <displayCategory>Cosmetic_Skin</displayCategory>
+        <skinColorOverride>(73, 107, 105)</skinColorOverride>
+        <exclusionTags>
+            <li>SkinColorOverride</li>
+        </exclusionTags>
+        <biostatCpx>0</biostatCpx>
+        <displayOrderInCategory>208</displayOrderInCategory>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>ESCP_Gene_Sload_Skin9</defName>
+        <canGenerateInGeneSet>false</canGenerateInGeneSet>
+        <label>pale teal Sload skin</label>
+        <labelShortAdj>teal</labelShortAdj>
+        <description>Carriers have slimy pale teal skin.</description>
+        <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+        <displayCategory>Cosmetic_Skin</displayCategory>
+        <skinColorOverride>(106, 139, 139)</skinColorOverride>
+        <exclusionTags>
+            <li>SkinColorOverride</li>
+        </exclusionTags>
+        <biostatCpx>0</biostatCpx>
+        <displayOrderInCategory>209</displayOrderInCategory>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>ESCP_Gene_Sload_Skin10</defName>
+        <canGenerateInGeneSet>false</canGenerateInGeneSet>
+        <label>mauve Sload skin</label>
+        <labelShortAdj>mauve</labelShortAdj>
+        <description>Carriers have slimy mauve skin.</description>
+        <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+        <displayCategory>Cosmetic_Skin</displayCategory>
+        <skinColorOverride>(117, 93, 103)</skinColorOverride>
+        <exclusionTags>
+            <li>SkinColorOverride</li>
+        </exclusionTags>
+        <biostatCpx>0</biostatCpx>
+        <displayOrderInCategory>210</displayOrderInCategory>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>ESCP_Gene_Sload_Skin11</defName>
+        <canGenerateInGeneSet>false</canGenerateInGeneSet>
+        <label>violet Sload skin</label>
+        <labelShortAdj>violet</labelShortAdj>
+        <description>Carriers have slimy violet skin.</description>
+        <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+        <displayCategory>Cosmetic_Skin</displayCategory>
+        <skinColorOverride>(92, 75, 102)</skinColorOverride>
+        <exclusionTags>
+            <li>SkinColorOverride</li>
+        </exclusionTags>
+        <biostatCpx>0</biostatCpx>
+        <displayOrderInCategory>211</displayOrderInCategory>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>ESCP_Gene_Sload_Skin12</defName>
+        <canGenerateInGeneSet>false</canGenerateInGeneSet>
+        <label>burgundy Sload skin</label>
+        <labelShortAdj>burgundy</labelShortAdj>
+        <description>Carriers have slimy burgundy skin.</description>
+        <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+        <displayCategory>Cosmetic_Skin</displayCategory>
+        <skinColorOverride>(110, 85, 90)</skinColorOverride>
+        <exclusionTags>
+            <li>SkinColorOverride</li>
+        </exclusionTags>
+        <biostatCpx>0</biostatCpx>
+        <displayOrderInCategory>212</displayOrderInCategory>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>ESCP_Gene_Sload_Skin13</defName>
+        <canGenerateInGeneSet>false</canGenerateInGeneSet>
+        <label>gray Sload skin</label>
+        <labelShortAdj>gray</labelShortAdj>
+        <description>Carriers have slimy gray skin.</description>
+        <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath>
+        <displayCategory>Cosmetic_Skin</displayCategory>
+        <skinColorOverride>(71, 77, 78)</skinColorOverride>
+        <exclusionTags>
+            <li>SkinColorOverride</li>
+        </exclusionTags>
+        <biostatCpx>0</biostatCpx>
+        <displayOrderInCategory>213</displayOrderInCategory>
+    </GeneDef>
+
+</Defs>

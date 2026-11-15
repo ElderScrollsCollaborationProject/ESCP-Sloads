@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <PreceptDef>
+        <defName>ESCP_SloadLeather_Disgusting</defName>
+        <issue>ESCP_SloadLeather</issue>
+        <label>disgusting</label>
+        <description>Sloads are disgusting things, their leather is slimy, why would you want to wear something made of it?</description>
+        <impact>Low</impact>
+        <displayOrderInIssue>50</displayOrderInIssue>
+        <displayOrderInImpact>100</displayOrderInImpact>
+        <defaultSelectionWeight>1</defaultSelectionWeight>
+        <comps>
+            <li Class="PreceptComp_SituationalThought">
+                <thought>ESCP_SloadLeatherApparel_Disgusting</thought>
+                <description>Sload leather apparel</description>
+                <tooltipShowMoodRange>true</tooltipShowMoodRange>
+            </li>
+        </comps>
+    </PreceptDef>
+
+    <PreceptDef>
+        <defName>ESCP_SloadLeather_Divine</defName>
+        <issue>ESCP_SloadLeather</issue>
+        <label>divine</label>
+        <description>Sloads are divine creatures, to wear the skin of one is the only way to feel a fraction of their power!</description>
+        <impact>Low</impact>
+        <displayOrderInIssue>50</displayOrderInIssue>
+        <displayOrderInImpact>100</displayOrderInImpact>
+        <defaultSelectionWeight>1</defaultSelectionWeight>
+        <comps>
+            <li Class="PreceptComp_SituationalThought">
+                <thought>ESCP_SloadLeatherApparel_Divine</thought>
+                <description>Sload leather apparel</description>
+                <tooltipShowMoodRange>true</tooltipShowMoodRange>
+            </li>
+        </comps>
+        <requiredMemes>
+            <li>ESCP_Meme_SloadicWays</li>
+        </requiredMemes>
+    </PreceptDef>
+
+    <PreceptDef>
+        <defName>ESCP_SloadLeather_Heretical</defName>
+        <issue>ESCP_SloadLeather</issue>
+        <label>heretical</label>
+        <description>To skin a Sload is already a grave sin. But to then wear that skin as clothes! Unforgivable!</description>
+        <impact>Low</impact>
+        <displayOrderInIssue>50</displayOrderInIssue>
+        <displayOrderInImpact>100</displayOrderInImpact>
+        <defaultSelectionWeight>1</defaultSelectionWeight>
+        <comps>
+            <li Class="PreceptComp_SituationalThought">
+                <thought>ESCP_SloadLeatherApparel_Heretical</thought>
+                <description>Sload leather apparel</description>
+                <tooltipShowMoodRange>true</tooltipShowMoodRange>
+            </li>
+        </comps>
+        <requiredMemes>
+            <li>ESCP_Meme_SloadicWays</li>
+        </requiredMemes>
+    </PreceptDef>
+
+    <PreceptDef>
+        <defName>ESCP_SloadOpinion_Reviled</defName>
+        <issue>ESCP_SloadOpinion</issue>
+        <label>reviled</label>
+        <description>Sloads are abominations, and it is our duty to cleanse them from this world.\n\n&lt;color=#E5E54C&gt;Faction goodwill offset:&lt;/color&gt;\n  - Sload faction: -100</description>
+        <impact>High</impact>
+        <displayOrderInIssue>50</displayOrderInIssue>
+        <displayOrderInImpact>100</displayOrderInImpact>
+        <defaultSelectionWeight>2</defaultSelectionWeight>
+        <comps>
+            <li Class="PreceptComp_SituationalThought">
+                <thought>ESCP_SloadsInColony_Reviled_Faction</thought>
+                <description>Each Sload in faction</description>
+            </li>
+            <li Class="PreceptComp_SituationalThought">
+                <thought>ESCP_SloadsInColony_Reviled_Map</thought>
+                <description>Each Sload on map</description>
+            </li>
+            <li Class="PreceptComp_SelfTookMemoryThought">
+                <eventDef>ESCP_KilledSload</eventDef>
+                <thought>ESCP_KilledSload_Reviled</thought>
+            </li>
+            <li Class="PreceptComp_SituationalThought">
+                <thought>ESCP_SloadsOpinion_Reviled</thought>
+                <description>Opinion of Sload</description>
+            </li>
+        </comps>
+        <conflictingMemes>
+            <li>ESCP_Meme_SloadicWays</li>
+        </conflictingMemes>
+    </PreceptDef>
+
+    <PreceptDef>
+        <defName>ESCP_SloadOpinion_Despised</defName>
+        <issue>ESCP_SloadOpinion</issue>
+        <label>despised</label>
+        <description>Sloads are horrific creatures that care not for our laws, they are a threat to all of us, as such they should be killed on sight.\n\n&lt;color=#E5E54C&gt;Faction goodwill offset:&lt;/color&gt;\n  - Sload faction: -50</description>
+        <impact>High</impact>
+        <displayOrderInIssue>50</displayOrderInIssue>
+        <displayOrderInImpact>100</displayOrderInImpact>
+        <defaultSelectionWeight>5</defaultSelectionWeight>
+        <comps>
+            <li Class="PreceptComp_SituationalThought">
+                <thought>ESCP_SloadsInColony_Despised_Faction</thought>
+                <description>Each Sload in faction</description>
+            </li>
+            <li Class="PreceptComp_SituationalThought">
+                <thought>ESCP_SloadsInColony_Despised_Map</thought>
+                <description>Each Sload on map</description>
+            </li>
+            <li Class="PreceptComp_SituationalThought">
+                <thought>ESCP_SloadsOpinion_Despised</thought>
+                <description>Opinion of Sload</description>
+            </li>
+        </comps>
+        <conflictingMemes>
+            <li>ESCP_Meme_SloadicWays</li>
+        </conflictingMemes>
+    </PreceptDef>
+
+    <PreceptDef>
+        <defName>ESCP_SloadOpinion_Hated</defName>
+        <issue>ESCP_SloadOpinion</issue>
+        <label>hated</label>
+        <description>Sloads are disgusting creatures that cover the ground with their filth, as such they should not be allowed to live with us.\n\n&lt;color=#E5E54C&gt;Faction goodwill offset:&lt;/color&gt;\n  - Sload faction: -25</description>
+        <impact>Medium</impact>
+        <displayOrderInIssue>50</displayOrderInIssue>
+        <displayOrderInImpact>100</displayOrderInImpact>
+        <defaultSelectionWeight>3</defaultSelectionWeight>
+        <comps>
+            <li Class="PreceptComp_SituationalThought">
+                <thought>ESCP_SloadsInColony_Hated_Faction</thought>
+                <description>Each Sload in faction</description>
+            </li>
+            <li Class="PreceptComp_SituationalThought">
+                <thought>ESCP_SloadsInColony_Hated_Map</thought>
+                <description>Each Sload on map</description>
+            </li>
+            <li Class="PreceptComp_SituationalThought">
+                <thought>ESCP_SloadsOpinion_Hated</thought>
+                <description>Opinion of Sload</description>
+            </li>
+        </comps>
+        <conflictingMemes>
+            <li>ESCP_Meme_SloadicWays</li>
+        </conflictingMemes>
+    </PreceptDef>
+
+    <PreceptDef>
+        <defName>ESCP_SloadOpinion_Allowed</defName>
+        <issue>ESCP_SloadOpinion</issue>
+        <label>allowed</label>
+        <description>Sloads may be disgusting creatures, but they have their place in our society.</description>
+        <impact>Low</impact>
+        <displayOrderInIssue>50</displayOrderInIssue>
+        <displayOrderInImpact>100</displayOrderInImpact>
+        <defaultSelectionWeight>1</defaultSelectionWeight>
+        <comps>
+		</comps>
+    </PreceptDef>
+
+    <PreceptDef>
+        <defName>ESCP_SloadOpinion_Exalted</defName>
+        <issue>ESCP_SloadOpinion</issue>
+        <label>exalted</label>
+        <description>Sloads are capable of shaping life itself, and should be revered as gods.\n\n&lt;color=#E5E54C&gt;Faction goodwill offset:&lt;/color&gt;\n  - Sload faction: +100</description>
+        <impact>High</impact>
+        <displayOrderInIssue>50</displayOrderInIssue>
+        <displayOrderInImpact>100</displayOrderInImpact>
+        <defaultSelectionWeight>3</defaultSelectionWeight>
+        <comps>
+            <li Class="PreceptComp_SituationalThought">
+                <thought>ESCP_SloadsInColony_ExaltedNone</thought>
+                <description>No Sload in faction</description>
+            </li>
+            <li Class="PreceptComp_SituationalThought">
+                <thought>ESCP_SloadsInColony_ExaltedNoneMap</thought>
+                <description>No Sload on map</description>
+            </li>
+            <li Class="PreceptComp_SituationalThought">
+                <thought>ESCP_SloadsInColony_Exalted</thought>
+                <description>Each Sload in faction</description>
+            </li>
+            <li Class="PreceptComp_SituationalThought">
+                <thought>ESCP_SloadsInColony_ExaltedMap</thought>
+                <description>Each Sload on map</description>
+            </li>
+            <li Class="PreceptComp_SelfTookMemoryThought">
+                <eventDef>ESCP_KilledSload</eventDef>
+                <thought>ESCP_KilledSload_Exalted</thought>
+            </li>
+            <li Class="PreceptComp_SituationalThought">
+                <thought>ESCP_SloadsOpinion_Exalted</thought>
+                <description>Opinion of Sload</description>
+            </li>
+        </comps>
+        <requiredMemes>
+            <li>ESCP_Meme_SloadicWays</li>
+        </requiredMemes>
+    </PreceptDef>
+
+    <PreceptDef>
+        <defName>ESCP_SloadThrallOpinion_Heretical</defName>
+        <issue>ESCP_SloadThrallOpinion</issue>
+        <label>heretical</label>
+        <description>The creation of thralls by Sloads is an affront to all that is divine, any sload that creates them should be burned alive.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\nThe creation of thralls by Sloads is outlawed, disabling the use of the &lt;color=#E5E54C&gt;create thrall&lt;/color&gt; ability.</description>
+        <impact>High</impact>
+        <displayOrderInIssue>50</displayOrderInIssue>
+        <displayOrderInImpact>100</displayOrderInImpact>
+        <defaultSelectionWeight>3</defaultSelectionWeight>
+        <conflictingMemes>
+            <li>ESCP_Meme_SloadicWays</li>
+        </conflictingMemes>
+    </PreceptDef>
+
+    <PreceptDef>
+        <defName>ESCP_SloadThrallOpinion_Allowed</defName>
+        <issue>ESCP_SloadThrallOpinion</issue>
+        <label>allowed</label>
+        <description>A corpse is a corpse, no one should care what happens to it.</description>
+        <impact>Low</impact>
+        <displayOrderInIssue>50</displayOrderInIssue>
+        <displayOrderInImpact>100</displayOrderInImpact>
+        <defaultSelectionWeight>1</defaultSelectionWeight>
+    </PreceptDef>
+
+    <PreceptDef>
+        <defName>ESCP_SloadThrassianImmunity_Divine</defName>
+        <issue>ESCP_SloadThrassianImmunity</issue>
+        <label>divine</label>
+        <description>The Sload created the Thrassian Plague, so we should embrace it!</description>
+        <impact>Low</impact>
+        <statOffsets>
+			
+		</statOffsets>
+        <displayOrderInIssue>50</displayOrderInIssue>
+        <displayOrderInImpact>100</displayOrderInImpact>
+        <defaultSelectionWeight>3</defaultSelectionWeight>
+        <comps>
+            <li Class="PreceptComp_SituationalThought">
+                <thought>ESCP_HasThrassianPlague_Divine</thought>
+                <description>has Thrassian Plague</description>
+            </li>
+        </comps>
+        <requiredMemes>
+            <li>ESCP_Meme_SloadicWays</li>
+        </requiredMemes>
+    </PreceptDef>
+
+    <PreceptDef>
+        <defName>ESCP_SloadThrassianImmunity_Immune</defName>
+        <issue>ESCP_SloadThrassianImmunity</issue>
+        <label>immune</label>
+        <description>The Sload created the Thrassian Plague, so why should we fear it?\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;\n - prevents hostile Sload factions triggering the Thrassian Plague incident.</description>
+        <impact>Low</impact>
+        <displayOrderInIssue>50</displayOrderInIssue>
+        <displayOrderInImpact>100</displayOrderInImpact>
+        <defaultSelectionWeight>3</defaultSelectionWeight>
+        <requiredMemes>
+            <li>ESCP_Meme_SloadicWays</li>
+        </requiredMemes>
+    </PreceptDef>
+
+</Defs>

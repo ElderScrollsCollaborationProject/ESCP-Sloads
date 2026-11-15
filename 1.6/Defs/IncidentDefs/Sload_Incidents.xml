@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <IncidentDef>
+        <defName>ESCP_Incident_ThrassianPlague</defName>
+        <label>Thrassian Plague</label>
+        <diseaseIncident>ESCP_Hediff_ThrassianPlague</diseaseIncident>
+        <letterLabel>Disease: Thrassian Plague</letterLabel>
+        <letterText>{0} of your {1} have caught the Thrassian Plague, spread by a hostile Sload faction.\n\nEnsure you have a medical bed and a doctor. Make sure that they get proper treatment and spend as much time in bed as possible.\n\nThe following {1} have gotten sick</letterText>
+        <letterDef>NegativeEvent</letterDef>
+        <workerClass>ESCP.Sload.IncidentWorker_ThrassianPlague</workerClass>
+        <baseChance>2.0</baseChance>
+        <minRefireDays>10</minRefireDays>
+        <category>ThreatBig</category>
+        <targetTags>
+            <li>Map_PlayerHome</li>
+        </targetTags>
+        <diseaseVictimFractionRange>0.2~0.5</diseaseVictimFractionRange>
+    </IncidentDef>
+
+</Defs>

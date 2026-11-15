@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <MemeDef>
+        <defName>ESCP_Meme_SloadicWays</defName>
+        <label>Sloadic ways</label>
+        <description>The way Sload manipulate life, to spread disease, and raise thralls, is something only a godlike being should be able to do. As such, they should be revered.</description>
+        <iconPath>UI/Abilities/ESCP_SloadReleaseMiasma</iconPath>
+        <impact>2</impact>
+        <generalRules>
+            <rulesStrings>
+                <li>memeAdjective-&gt;divine</li>
+                <li>memeAdjective-&gt;corpulent</li>
+                <li>memeAdjective-&gt;slimy</li>
+                <li>memeLeaderAdjective-&gt;Thrassian</li>
+                <li>memeConcept-&gt;flesh</li>
+                <li>memeConcept-&gt;bone</li>
+                <li>memeConcept-&gt;muscle</li>
+                <li>memeConcept-&gt;plague</li>
+                <li>memeLeaderNoun-&gt;lord</li>
+            </rulesStrings>
+        </generalRules>
+        <descriptionMaker>
+            <rules>
+                <rulesStrings>
+                    <li>sloadName-&gt;[sloadLetter][sloadNameA][sloadNameB]</li>
+                    <li>creation(tag=SloadicWays)        -&gt;If [deity0_name] created us, then the Sload are clearly an avatar of [deity0_objective] power. For they are able to manipulate life itself, as if it were grains of sand.</li>
+                    <li>episode(uses=1,tag=SloadicWays)  -&gt;So we sought out the Wise Sload, an avatar of [deity0_name], and we pledged ourselves to [sloadName]. A pledge to serve, in life, and in death.</li>
+                    <li>intro(tag=SloadicWays)           -&gt;After a long pilgrimage, we happened upon [place_summary] [place_name], our new home. Shortly after erecting our homes, [foeLeader] attacked us. Many were lost, it was made clear how frail our bodies are. But [deity0_name] came to us, and granted us the knowledge we needed.</li>
+                    <li>conflict(tag=SloadicWays)        -&gt;[foeLeader] forced us into a cave system, unaware of the being that calls those caves its home.</li>
+                    <li>founderJoin(tag=SloadicWays)     -&gt;[founderName] used our newfound knowledge, and sought the aid of the Sload.</li>
+                    <li>victory(tag=SloadicWays)         -&gt;With the Sloads aid, we reclaimed our new homeland. [founderName] fought with honor besides our brethren, but was lost to a fatal blow. [sloadName] ensured that [founderName] would always be with us.</li>
+                    <li>setup(tag=SloadicWays)           -&gt;[founderName] in an attempt to overthrow [foeLeader], sought the aid of a Sload.</li>
+                    <li>story(uses=1,tag=SloadicWays)    -&gt;[sloadName] decided to aid us, building an unstoppable army, and ending [foeLeader]'s reign of terror.</li>
+                    <li>lessonIntro(tag=SloadicWays)         -&gt;I sought out the inhabitant of a nearby cave, one who most fear and despise. Seeking knowledge, that may help me cure the plague spreading through my home.</li>
+                    <li>lesson(tag=SloadicWays)              -&gt;the way cling to your limited form is pathetic</li>
+                    <li>lessonReinforcement(tag=SloadicWays) -&gt;True freedom can only be found in death.</li>
+                    <li>archistBasis(tag=SloadicWays)    -&gt;Sloads must surely understand the power of the archotechs, for how else could a being manipulate life like they do.</li>
+                    <li>archistProphecy(tag=SloadicWays) -&gt;[inTheEnd], through the aid of the Sloads, we will be able to ascend to a higher plane.</li>
+                    <li>animistBasis(tag=SloadicWays)    -&gt;Sloads must be able to commune with the spirits, for how else would they be able to manipulate life the way they do.</li>
+                    <li>animistFact(tag=SloadicWays)     -&gt;We must seek the great [sloadName], so that we too will be able to commune with the spirits.</li>
+                    <li>animistProphecy(tag=SloadicWays) -&gt;[itIsSaid] those that provide the Sloads with which they desire, will in turn be provided with untold knowledge.</li>
+                </rulesStrings>
+                <rulesFiles>
+                    <li>sloadLetter-&gt;ESCP_SloadNames/ESCP_SloadLetters</li>
+                    <li>sloadNameA-&gt;ESCP_SloadNames/ESCP_SloadNamesA</li>
+                    <li>sloadNameB-&gt;ESCP_SloadNames/ESCP_SloadNamesB</li>
+                </rulesFiles>
+            </rules>
+        </descriptionMaker>
+        <requireOne>
+            <li>
+                <li>ESCP_SloadOpinion_Allowed</li>
+                <li>ESCP_SloadOpinion_Exalted</li>
+            </li>
+            <li>
+                <li>ESCP_SloadThrallOpinion_Allowed</li>
+            </li>
+            <li>
+                <li>ESCP_SloadThrassianImmunity_Immune</li>
+                <li>ESCP_SloadThrassianImmunity_Divine</li>
+            </li>
+            <li>
+                <li>ESCP_SloadLeather_Heretical</li>
+                <li>ESCP_SloadLeather_Divine</li>
+            </li>
+        </requireOne>
+    </MemeDef>
+
+</Defs>

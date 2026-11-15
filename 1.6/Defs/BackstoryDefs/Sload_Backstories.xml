@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Sload_PolwygleBackstory_Child</defName>
+        <title>polwygle</title>
+        <titleShort>polwygle</titleShort>
+        <description>Being a Sload, [PAWN_nameDef]'s childhood was spent as a polwygle, a strange little creature, barely sentient. [PAWN_nameDef] managed to avoid the nets, eventually maturing, and heading to land.</description>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>ESCP_Backstory_Sload_Child</li>
+        </spawnCategories>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Sload_NewlyLanded</defName>
+        <title>late bloomer</title>
+        <titleShort>late bloomer</titleShort>
+        <description>[PAWN_nameDef] was a bit of a late bloomer, and has only just recently matured and made it to land. Even so [PAWN_nameDef] is excited to see what mysteries await [PAWN_nameDef] on land, or they would be, if [PAWN_nameDef] actually felt emotions.</description>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>ESCP_Backstory_Sload_Adult</li>
+        </spawnCategories>
+        <workDisables>
+            <li>Caring</li>
+        </workDisables>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Sload_SoapTrader</defName>
+        <title>soap trader</title>
+        <titleShort>soap trader</titleShort>
+        <description>[PAWN_nameDef] oversaw the trade of Sload Soap. [PAWN_nameDef] had many happy customers, yet even so [PAWN_nameDef] felt absolutely nothing.</description>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>ESCP_Backstory_Sload_Adult</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>6</Social>
+            <Intellectual>6</Intellectual>
+        </skillGains>
+        <workDisables>
+            <li>PlantWork</li>
+            <li>Animals</li>
+            <li>ManualDumb</li>
+            <li>Caring</li>
+        </workDisables>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Sload_SoapMaker</defName>
+        <title>soap maker</title>
+        <titleShort>soap maker</titleShort>
+        <description>[PAWN_nameDef] turned Sload grubs into soap. [PAWN_nameDef] is responsible for the death of thousands of immature Sloads, [PAWN_nameDef] also doesn't care.</description>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>ESCP_Backstory_Sload_Adult</li>
+        </spawnCategories>
+        <skillGains>
+            <Cooking>6</Cooking>
+            <Crafting>3</Crafting>
+            <Intellectual>3</Intellectual>
+        </skillGains>
+        <workDisables>
+            <li>PlantWork</li>
+            <li>Animals</li>
+            <li>Mining</li>
+            <li>Caring</li>
+        </workDisables>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Sload_CoralCrafter</defName>
+        <title>coral crafter</title>
+        <titleShort>coral crafter</titleShort>
+        <description>[PAWN_nameDef] was rather skilled in the art of turning coral into abodes, and various other buildings.</description>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>ESCP_Backstory_Sload_Adult</li>
+        </spawnCategories>
+        <skillGains>
+            <Construction>6</Construction>
+            <Crafting>3</Crafting>
+            <Intellectual>3</Intellectual>
+        </skillGains>
+        <workDisables>
+            <li>Animals</li>
+            <li>Artistic</li>
+            <li>Caring</li>
+        </workDisables>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Sload_GrubCatcher</defName>
+        <title>grub catcher</title>
+        <titleShort>grub catcher</titleShort>
+        <description>[PAWN_nameDef] was one of many in charge of catching juvenile Sload. The caught grubs were, of course, turned into soap, which [PAWN_nameDef] made great use of.</description>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>ESCP_Backstory_Sload_Adult</li>
+        </spawnCategories>
+        <skillGains>
+            <Animals>6</Animals>
+            <Crafting>3</Crafting>
+            <Intellectual>3</Intellectual>
+        </skillGains>
+        <workDisables>
+            <li>PlantWork</li>
+            <li>Animals</li>
+            <li>Mining</li>
+            <li>Caring</li>
+        </workDisables>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Sload_NetMaker</defName>
+        <title>net maker</title>
+        <titleShort>net maker</titleShort>
+        <description>[PAWN_nameDef] made many finely crafted nets, while most were used to catch Sload grubs, some were used to catch other things.</description>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>ESCP_Backstory_Sload_Adult</li>
+        </spawnCategories>
+        <skillGains>
+            <Crafting>6</Crafting>
+            <Construction>3</Construction>
+            <Intellectual>3</Intellectual>
+        </skillGains>
+        <workDisables>
+            <li>PlantWork</li>
+            <li>Animals</li>
+            <li>Artistic</li>
+            <li>Caring</li>
+        </workDisables>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Sload_Alchemist</defName>
+        <title>alchemist</title>
+        <titleShort>alchemist</titleShort>
+        <description>[PAWN_nameDef] was quite skilled in the alchemical studies, and made many balms, elixirs and decoctions. Some of which were best not to be ingested.</description>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>ESCP_Backstory_Sload_Adult</li>
+        </spawnCategories>
+        <skillGains>
+            <Medicine>6</Medicine>
+            <Cooking>3</Cooking>
+            <Intellectual>3</Intellectual>
+        </skillGains>
+        <workDisables>
+            <li>Mining</li>
+            <li>Artistic</li>
+            <li>ManualDumb</li>
+        </workDisables>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Sload_Diplomat</defName>
+        <title>diplomat</title>
+        <titleShort>diplomat</titleShort>
+        <description>[PAWN_nameDef] was often sent on diplomatic excursions, mostly dealing with Maormer and other ill-tempered races. [PAWN_nameDef] always took their time in negotiations, much to the annoyance of the other parties involved.</description>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>ESCP_Backstory_Sload_Adult</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>8</Social>
+            <Intellectual>8</Intellectual>
+        </skillGains>
+        <workDisables>
+            <li>PlantWork</li>
+            <li>Animals</li>
+            <li>ManualDumb</li>
+            <li>Caring</li>
+        </workDisables>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Sload_FloaterPilot</defName>
+        <title>floater pilot</title>
+        <titleShort>pilot</titleShort>
+        <description>[PAWN_nameDef] piloted, and tended to, a Sload Floater. A wide variety of cargo was transported on [PAWN_nameDef]'s floater, from soap to slaves, and food to corpses.</description>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>ESCP_Backstory_Sload_Adult</li>
+        </spawnCategories>
+        <skillGains>
+            <Construction>8</Construction>
+            <Crafting>4</Crafting>
+            <Intellectual>4</Intellectual>
+        </skillGains>
+        <workDisables>
+            <li>Mining</li>
+            <li>PlantWork</li>
+            <li>Animals</li>
+            <li>Caring</li>
+        </workDisables>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Sload_Mycologist</defName>
+        <title>mycologist</title>
+        <titleShort>mycologist</titleShort>
+        <description>[PAWN_nameDef] specialized in the growing and tending of the various fungi found around their home. A rather important job, because fungi has many uses, some of them much less civilised than others.</description>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>ESCP_Backstory_Sload_Adult</li>
+        </spawnCategories>
+        <skillGains>
+            <Plants>8</Plants>
+            <Intellectual>8</Intellectual>
+        </skillGains>
+        <workDisables>
+            <li>Mining</li>
+            <li>Crafting</li>
+            <li>Artistic</li>
+            <li>Caring</li>
+        </workDisables>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Sload_Epidemiologist</defName>
+        <title>epidemiologist</title>
+        <titleShort>epidemiologist</titleShort>
+        <description>[PAWN_nameDef] was highly knowledgeable in the field of infectious diseases, and various other health afflictions. While this knowledge was often used to tend to their fellow Sloads, it was also used in the creation of bio-weapons.</description>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>ESCP_Backstory_Sload_Adult</li>
+        </spawnCategories>
+        <skillGains>
+            <Medicine>8</Medicine>
+            <Intellectual>8</Intellectual>
+        </skillGains>
+        <workDisables>
+            <li>ManualDumb</li>
+            <li>Mining</li>
+        </workDisables>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Sload_Wise</defName>
+        <title>wise Sload</title>
+        <titleShort>wise Sload</titleShort>
+        <description>[PAWN_nameDef] was considered to be more intelligent than most, and as such devoted most days to scholarly activities. Many fellow Sloads came to [PAWN_nameDef] for advice, and [PAWN_nameDef] always took their time in mulling over the options.</description>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>ESCP_Backstory_Sload_Adult</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>16</Intellectual>
+        </skillGains>
+        <workDisables>
+            <li>PlantWork</li>
+            <li>Animals</li>
+            <li>Mining</li>
+            <li>ManualDumb</li>
+        </workDisables>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Sload_PlagueLord</defName>
+        <title>Thrassian plague lord</title>
+        <titleShort>plague lord</titleShort>
+        <description>[PAWN_nameDef] has spent many years studying plagues, with a keen focus on one in particular. During this time, [PAWN_nameDef] developed a strange bond with the Thrassian Plague, and is now able to release immense clouds of Thrassian Miasma at will.</description>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>ESCP_Backstory_Sload_Adult</li>
+        </spawnCategories>
+        <skillGains>
+            <Medicine>14</Medicine>
+            <Intellectual>14</Intellectual>
+        </skillGains>
+        <workDisables>
+            <li>ManualDumb</li>
+            <li>Mining</li>
+        </workDisables>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Sload_Necromancer</defName>
+        <title>master necromancer</title>
+        <titleShort>necromancer</titleShort>
+        <description>[PAWN_nameDef] is a master of the profane arts of necromancy, a practice despised by much of the civilised world. [PAWN_nameDef] never has to do anything themself, as they can just command a thrall to do it for them.</description>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>ESCP_Backstory_Sload_Adult</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>20</Intellectual>
+        </skillGains>
+        <workDisables>
+            <li>Firefighting</li>
+            <li>ManualSkilled</li>
+            <li>ManualDumb</li>
+            <li>Caring</li>
+        </workDisables>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Sload_StuffKnowledge_BuoyantSteel</defName>
+        <title>master buoyant steel smith</title>
+        <titleShort>master smith</titleShort>
+        <description>On one of [PAWN_nameDef]'s excursions into the abyss, they came across a shipwreck, and in that shipwreck, a strange metal. The metal seemed to be a magically infused alloy, far lighter than steel, yet stronger as well. Such a metal would make for good armour, [PAWN_nameDef] thought. And so [PAWN_nameDef] decided to spend a few decades studying it, hoping to learn how best to work it.\n\nAnything [PAWN_nameDef] crafts out of buoyant steel will be one quality level higher than normal.</description>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>ESCP_Backstory_Sload_Adult</li>
+        </spawnCategories>
+        <skillGains>
+            <Crafting>8</Crafting>
+            <Intellectual>10</Intellectual>
+        </skillGains>
+        <workDisables>
+            <li>ManualDumb</li>
+            <li>Caring</li>
+        </workDisables>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>ESCP_Backstory_Sload_ThrallMaster</defName>
+        <title>thrall master</title>
+        <titleShort>thrall master</titleShort>
+        <description>[PAWN_nameDef] is highly skilled at creating thralls, managing to control small armies of them at the same time. A skill [PAWN_nameDef] puts to great use.</description>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>ESCP_Backstory_Sload_Adult</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>14</Intellectual>
+        </skillGains>
+        <workDisables>
+            <li>Firefighting</li>
+            <li>ManualSkilled</li>
+            <li>ManualDumb</li>
+            <li>Caring</li>
+        </workDisables>
+    </BackstoryDef>
+
+</Defs>

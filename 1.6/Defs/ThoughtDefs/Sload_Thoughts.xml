@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ThoughtDef>
+        <defName>ESCP_Thought_SloadEmotionless</defName>
+        <workerClass>ThoughtWorker_AlwaysActive</workerClass>
+        <validWhileDespawned>true</validWhileDespawned>
+        <requiredGenes>
+            <li>ESCP_Gene_Sload_Emotionless</li>
+        </requiredGenes>
+        <stages>
+            <li>
+                <label>emotionless</label>
+                <description>I wonder what I am supposed to feel right now. Probably nothing important.</description>
+                <baseMoodEffect>50</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>ESCP_NecromanticThralls_ThrallThought</defName>
+        <workerClass>ESCP_NecromanticThralls.ThoughtWorker_ThrallThought</workerClass>
+        <validWhileDespawned>true</validWhileDespawned>
+        <stages>
+            <li>
+                <label>thrall</label>
+                <description>...</description>
+                <baseMoodEffect>1</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>ESCP_Thought_AteSloadGrubs</defName>
+        <durationDays>1</durationDays>
+        <stackLimit>1</stackLimit>
+        <stages>
+            <li>
+                <label>ate Sload grubs</label>
+                <description>I ate slimy Sload grubs. The way they slid down my throat was disgusting!</description>
+                <baseMoodEffect>-6</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+</Defs>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <HediffDef ParentName="InfectionBase">
+        <defName>ESCP_Hediff_ThrassianPlague</defName>
+        <label>Thrassian Plague</label>
+        <description>A disease made by the Sload and spread as a weapon. It looks much like other plagues, but the sick also suffer a hunger they cannot satisfy and often fall into eating binges.</description>
+        <makesSickThought>true</makesSickThought>
+        <lethalSeverity>1</lethalSeverity>
+        <tendable>true</tendable>
+        <comps>
+            <li Class="HediffCompProperties_TendDuration">
+                <baseTendDurationHours>12</baseTendDurationHours>
+                <severityPerDayTended>-0.3628</severityPerDayTended>
+            </li>
+            <li Class="HediffCompProperties_Immunizable">
+                <severityPerDayNotImmune>0.666</severityPerDayNotImmune>
+                <immunityPerDaySick>0.5224</immunityPerDaySick>
+                <severityPerDayImmune>-0.333</severityPerDayImmune>
+                <immunityPerDayNotSick>-0.02</immunityPerDayNotSick>
+            </li>
+            <li Class="HediffCompProperties_CauseMentalState">
+                <animalMentalState>Binging_Food</animalMentalState>
+                <humanMentalState>Binging_Food</humanMentalState>
+                <letterDef>ThreatSmall</letterDef>
+                <mtbDaysToCauseMentalState>1</mtbDaysToCauseMentalState>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <label>minor</label>
+                <painOffset>0.2</painOffset>
+                <hungerRateFactorOffset>0.5</hungerRateFactorOffset>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>-0.05</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>-0.05</offset>
+                    </li>
+                </capMods>
+            </li>
+            <li>
+                <minSeverity>0.6</minSeverity>
+                <label>major</label>
+                <painOffset>0.35</painOffset>
+                <hungerRateFactorOffset>1.0</hungerRateFactorOffset>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>-0.2</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>-0.2</offset>
+                    </li>
+                </capMods>
+            </li>
+            <li>
+                <minSeverity>0.8</minSeverity>
+                <label>extreme</label>
+                <painOffset>0.6</painOffset>
+                <hungerRateFactorOffset>2.0</hungerRateFactorOffset>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>-0.3</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>-0.3</offset>
+                    </li>
+                </capMods>
+            </li>
+            <li>
+                <minSeverity>0.9</minSeverity>
+                <label>extreme</label>
+                <lifeThreatening>true</lifeThreatening>
+                <painOffset>0.85</painOffset>
+                <hungerRateFactorOffset>5.0</hungerRateFactorOffset>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>-0.3</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>-0.3</offset>
+                    </li>
+                    <li>
+                        <capacity>Breathing</capacity>
+                        <offset>-0.15</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef>
+        <defName>ESCP_Hediff_SloadPlagueLord</defName>
+        <hediffClass>HediffWithComps</hediffClass>
+        <label>plague lord</label>
+        <description>Long study of disease has given this Sload real control over the Thrassian Plague. Rare elixirs can grant the same mastery without the decades of study.</description>
+        <defaultLabelColor>(0.8, 0.6, 1.0)</defaultLabelColor>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_GiveAbility">
+                <abilityDefs>
+                    <li>ESCP_Ability_Sload_ThrassianCloud</li>
+                    <li>ESCP_Ability_Sload_ThrassianFog</li>
+                </abilityDefs>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <statOffsets>
+                    <ImmunityGainSpeed>3</ImmunityGainSpeed>
+                    <ToxicResistance>0.25</ToxicResistance>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef>
+        <defName>ESCP_Hediff_SloadThrallKnowledge</defName>
+        <hediffClass>HediffWithComps</hediffClass>
+        <label>enhanced thrall knowledge</label>
+        <description>Long study of corpses has taught this Sload how to work new knowledge into its thralls. Rare elixirs can grant the same skill without the decades of study.</description>
+        <defaultLabelColor>(0.8, 0.6, 1.0)</defaultLabelColor>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_GiveAbility">
+                <abilityDefs>
+                    <li>ESCP_Ability_Sload_ImproveThrall</li>
+                </abilityDefs>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>0.15</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <GlobalLearningFactor>0.25</GlobalLearningFactor>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef>
+        <defName>ESCP_NecromanticThralls_Enthralled</defName>
+        <label>thrall</label>
+        <description>A corpse raised and puppeteered by a necromancer. The body lives again, but the mind is barely there and works only as an extension of its master.\n\nThralls feel no pain and have almost no needs or thoughts. They do not learn, but their skills do not decay either.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <defaultLabelColor>(0.8, 0.6, 1.0)</defaultLabelColor>
+        <isBad>false</isBad>
+        <maxSeverity>1</maxSeverity>
+        <initialSeverity>1</initialSeverity>
+        <comps>
+            <li>
+                <compClass>ESCP_NecromanticThralls.HediffComp_Enthralled</compClass>
+            </li>
+            <li Class="HediffCompProperties_DisappearsOnDeath" />
+        </comps>
+        <stages>
+            <li>
+                <painFactor>0</painFactor>
+                <makeImmuneTo>
+                    <li>Flu</li>
+                    <li>Animal_Flu</li>
+                    <li>Plague</li>
+                    <li>Animal_Plague</li>
+                    <li>Malaria</li>
+                    <li>SleepingSickness</li>
+                    <li>ESCP_Hediff_ThrassianPlague</li>
+                </makeImmuneTo>
+                <statOffsets>
+                    <ImmunityGainSpeed>3</ImmunityGainSpeed>
+                    <ToxicResistance>0.5</ToxicResistance>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef>
+        <defName>ESCP_NecromanticThralls_ThrallStorage</defName>
+        <label>necromancer</label>
+        <description>This Sload knows how to bind the dead. The more intellectual it is, the more thralls it can hold at once.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <isBad>false</isBad>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <comps>
+            <li Class="HediffCompProperties_GiveAbility">
+                <abilityDef>ESCP_Ability_Sload_RaiseThrall</abilityDef>
+            </li>
+            <li Class="ESCP_NecromanticThralls.HediffCompProperties_ThrallStorage">
+                <skill>Intellectual</skill>
+                <maxExtraLimit>10</maxExtraLimit>
+                <levelRequirement>
+                    <li>0</li>
+                    <li>6</li>
+                    <li>9</li>
+                    <li>12</li>
+                    <li>15</li>
+                    <li>18</li>
+                    <li>20</li>
+                </levelRequirement>
+                <thrallLimit>
+                    <li>0</li>
+                    <li>3</li>
+                    <li>5</li>
+                    <li>7</li>
+                    <li>10</li>
+                    <li>12</li>
+                    <li>15</li>
+                </thrallLimit>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <becomeVisible>false</becomeVisible>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef>
+        <defName>ESCP_NecromanticThralls_ThrallLifespan</defName>
+        <label>fading thrall</label>
+        <description>The binding on this thrall is wearing thin. When it gives out, the body falls dead again.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <isBad>true</isBad>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <disappearsAfterTicks>60000~60000</disappearsAfterTicks>
+                <showRemainingTime>true</showRemainingTime>
+            </li>
+            <li>
+                <compClass>ESCP_NecromanticThralls.HediffComp_KillOnRemove</compClass>
+            </li>
+        </comps>
+    </HediffDef>
+
+</Defs>

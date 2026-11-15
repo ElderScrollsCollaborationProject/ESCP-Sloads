@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ThingDef ParentName="EggUnfertBase">
+        <defName>ESCP_Egg_Sload</defName>
+        <label>Sload grubs</label>
+        <description>A clump of young Sload with no more sense than a garden slug, almost none of which would ever have reached the polwygle stage. Their parents usually boil them down into soap. They can be eaten, though nobody should do it raw.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/ESCP_SloadGrub</texPath>
+            <drawSize>1.2</drawSize>
+        </graphicData>
+        <statBases>
+            <MarketValue>1.5</MarketValue>
+        </statBases>
+        <ingestible>
+            <specialThoughtDirect>ESCP_Thought_AteSloadGrubs</specialThoughtDirect>
+        </ingestible>
+    </ThingDef>
+
+    <ThingDef ParentName="LeatherBase">
+        <defName>ESCP_Leather_Sload</defName>
+        <label>Sload leather</label>
+        <description>Tanned, dried and scraped Sload hide. It never quite stops being slimy, and everyone hates it.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/ESCP_SloadLeather</texPath>
+            <color>(122, 131, 117)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>3.0</MarketValue>
+            <StuffPower_Armor_Sharp>0.64</StuffPower_Armor_Sharp>
+            <StuffPower_Insulation_Cold>5</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>5</StuffPower_Insulation_Heat>
+        </statBases>
+        <stuffProps>
+            <color>(122, 131, 117)</color>
+            <commonality>0</commonality>
+            <statFactors>
+                <Beauty>0.5</Beauty>
+            </statFactors>
+        </stuffProps>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>ESCP_SloadSoap</defName>
+        <label>Sload soap</label>
+        <description>Soap made by boiling down Sload grubs. It is used all over Tamriel, and the Sload keep a tight grip on the trade.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/ESCP_SloadSoap</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <drawSize>0.9</drawSize>
+        </graphicData>
+        <stackLimit>75</stackLimit>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MaxHitPoints>50</MaxHitPoints>
+            <MarketValue>7</MarketValue>
+            <Mass>0.02</Mass>
+            <Flammability>0.5</Flammability>
+            <DeteriorationRate>1.0</DeteriorationRate>
+        </statBases>
+        <thingCategories>
+            <li>Manufactured</li>
+        </thingCategories>
+        <tradeTags>
+            <li>ESCP_SloadGoods</li>
+        </tradeTags>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase" Name="ESCP_SloadElixirBase" Abstract="True">
+        <thingClass>ThingWithComps</thingClass>
+        <techLevel>Medieval</techLevel>
+        <graphicData>
+            <texPath>Things/Item/Special/ESCP_SloadThrassianElixir</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <thingCategories>
+            <li>Artifacts</li>
+        </thingCategories>
+        <tradeTags>
+            <li>ESCP_SloadElixir</li>
+        </tradeTags>
+        <statBases>
+            <MarketValue>1000</MarketValue>
+            <MaxHitPoints>80</MaxHitPoints>
+            <Mass>0.5</Mass>
+        </statBases>
+        <resourceReadoutPriority>Middle</resourceReadoutPriority>
+        <stackLimit>1</stackLimit>
+        <tradeNeverStack>true</tradeNeverStack>
+        <drawGUIOverlay>false</drawGUIOverlay>
+        <comps>
+            <li Class="CompProperties_Usable">
+                <useJob>UseArtifact</useJob>
+                <useLabel>drink {0_label}</useLabel>
+            </li>
+            <li Class="CompProperties_UseEffectDestroySelf" />
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="ESCP_SloadElixirBase">
+        <defName>ESCP_SloadElixir_Plague</defName>
+        <label>Thrassian plague elixir</label>
+        <description>A very rare elixir holding a swirling purple mixture. It gives a Sload real control over the Thrassian Plague.\n\nAnyone who is not a Sload should not drink it.</description>
+        <comps>
+            <li Class="ESCP.Sload.CompProperties_UseEffectThrassianElixir">
+                <hediff>ESCP_Hediff_SloadPlagueLord</hediff>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="ESCP_SloadElixirBase">
+        <defName>ESCP_SloadElixir_Thralls</defName>
+        <label>Thrassian thrall elixir</label>
+        <description>A very rare elixir holding a swirling purple mixture. It lets a Sload hold 5 more thralls at once.\n\nAnyone who is not a Sload should not drink it.</description>
+        <comps>
+            <li Class="ESCP_NecromanticThralls.CompProperties_UseEffectThrallLimitBook">
+                <limitIncrease>5</limitIncrease>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="ESCP_SloadElixirBase">
+        <defName>ESCP_SloadElixir_Refresh</defName>
+        <label>Thrassian refreshment elixir</label>
+        <description>A very rare elixir holding a swirling purple mixture. It lets a Sload raise another thrall right away.\n\nAnyone who is not a Sload should not drink it.</description>
+        <statBases>
+            <MarketValue>500</MarketValue>
+        </statBases>
+        <comps>
+            <li Class="ESCP.Sload.CompProperties_UseEffectThrassianElixir">
+                <refreshAbility>ESCP_Ability_Sload_RaiseThrall</refreshAbility>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="ESCP_SloadElixirBase">
+        <defName>ESCP_SloadElixir_Knowledge</defName>
+        <label>Thrassian knowledge elixir</label>
+        <description>A very rare elixir holding a swirling purple mixture. It teaches a Sload how to improve the skills of its thralls.\n\nAnyone who is not a Sload should not drink it.</description>
+        <comps>
+            <li Class="ESCP.Sload.CompProperties_UseEffectThrassianElixir">
+                <hediff>ESCP_Hediff_SloadThrallKnowledge</hediff>
+            </li>
+        </comps>
+    </ThingDef>
+
+</Defs>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+    <ESCP_SloadKingdom_Enlist_Letter_Title>In service to the Sload</ESCP_SloadKingdom_Enlist_Letter_Title>
+    <ESCP_SloadKingdom_Enlist_Letter_Label>The colony now serves the Sload. Their agents will pay and supply you, and they will be watching.</ESCP_SloadKingdom_Enlist_Letter_Label>
+    <ESCP_SloadKingdom_Enlist_Button_Label>Serve the Sload</ESCP_SloadKingdom_Enlist_Button_Label>
+    <ESCP_SloadKingdom_Enlist_Button_Desc>Offer the colony's service to the Sload of Thras. They pay very well, and they never say why.</ESCP_SloadKingdom_Enlist_Button_Desc>
+    <ESCP_SloadKingdom_Enlist_Requrements_Not_Satisfied>The Sload see no use for you yet. Standing: {0}.</ESCP_SloadKingdom_Enlist_Requrements_Not_Satisfied>
+    <ESCP_SloadKingdom_Enlisted_To_Hostile_Faction>The Sload do not employ their enemies. They have other uses for them.</ESCP_SloadKingdom_Enlisted_To_Hostile_Faction>
+    <ESCP_SloadKingdom_Enlisted_With_Key>In the service of the Sload</ESCP_SloadKingdom_Enlisted_With_Key>
+    <ESCP_SloadKingdom_Missions_Label>Sload commissions</ESCP_SloadKingdom_Missions_Label>
+    <ESCP_SloadKingdom_Missions_Desc>See what the Sload want.</ESCP_SloadKingdom_Missions_Desc>
+    <ESCP_SloadKingdom_Menu_Missions_Desc>Commissions from the coral towers of Thras. Paid when done.</ESCP_SloadKingdom_Menu_Missions_Desc>
+    <ESCP_SloadKingdom_Menu_Missions_Select_Quest>Select a job</ESCP_SloadKingdom_Menu_Missions_Select_Quest>
+    <ESCP_SloadKingdom_Menu_Missions_Start_Quest>Accept</ESCP_SloadKingdom_Menu_Missions_Start_Quest>
+    <ESCP_SloadKingdom_Menu_Missions_Collect_Bounty>Collect</ESCP_SloadKingdom_Menu_Missions_Collect_Bounty>
+    <ESCP_SloadKingdom_Provisions_Label>Draw supplies</ESCP_SloadKingdom_Provisions_Label>
+    <ESCP_SloadKingdom_Provisions_Desc>Supplies brought by Sload agents.</ESCP_SloadKingdom_Provisions_Desc>
+    <ESCP_SloadKingdom_Storage_Label>Coral vault</ESCP_SloadKingdom_Storage_Label>
+    <ESCP_SloadKingdom_Storage_Desc>Leave goods with the Sload's agents.</ESCP_SloadKingdom_Storage_Desc>
+    <ESCP_SloadKingdom_Resign_Menu_Text>End your service to the Sload? They will not forget.</ESCP_SloadKingdom_Resign_Menu_Text>
+    <ESCP_SloadKingdom_Resign_Letter_Title>Left the Sload</ESCP_SloadKingdom_Resign_Letter_Title>
+    <ESCP_SloadKingdom_Resign_Letter_Label>The colony has ended its service to the Sload.</ESCP_SloadKingdom_Resign_Letter_Label>
+    <ESCP_SloadKingdom_Resign_Button_Label>End your service</ESCP_SloadKingdom_Resign_Button_Label>
+    <ESCP_SloadKingdom_Resign_Button_Desc>Stop working for the Sload.</ESCP_SloadKingdom_Resign_Button_Desc>
+    <ESCP_SloadKingdom_Kick_Out_Letter_Title>Dismissed by the Sload</ESCP_SloadKingdom_Kick_Out_Letter_Title>
+    <ESCP_SloadKingdom_Kick_Out_Label_Title>The Sload have no further use for the colony.</ESCP_SloadKingdom_Kick_Out_Label_Title>
+    <ESCP_SloadKingdom_Salary_Label>Collect your fee</ESCP_SloadKingdom_Salary_Label>
+    <ESCP_SloadKingdom_Salary_Desc>Coin from the Sload's agents.</ESCP_SloadKingdom_Salary_Desc>
+    <ESCP_SloadKingdom_Work_0_Label>Run errands for their agents</ESCP_SloadKingdom_Work_0_Label>
+    <ESCP_SloadKingdom_Work_0_Desc>Carry sealed packages for Sload agents.</ESCP_SloadKingdom_Work_0_Desc>
+    <ESCP_SloadKingdom_Work_1_Label>Study their texts</ESCP_SloadKingdom_Work_1_Label>
+    <ESCP_SloadKingdom_Work_1_Desc>Study Sload necromantic texts.</ESCP_SloadKingdom_Work_1_Desc>
+
+</LanguageData>

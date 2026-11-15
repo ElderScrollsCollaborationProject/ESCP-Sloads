@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ThoughtDef>
+        <defName>ESCP_SloadLeatherApparel_Disgusting</defName>
+        <workerClass>ESCP.Sload.ThoughtWorker_Precept_SloadLeather</workerClass>
+        <validWhileDespawned>true</validWhileDespawned>
+        <stages>
+            <li>
+                <label>sload leather {0}</label>
+                <description>Surely there's something else I could be wearing.</description>
+                <baseMoodEffect>-4</baseMoodEffect>
+            </li>
+            <li>
+                <label>sload leather {0} (+1)</label>
+                <description>Eugh, it's still slimy.</description>
+                <baseMoodEffect>-6</baseMoodEffect>
+            </li>
+            <li>
+                <label>sload leather {0} (+2)</label>
+                <description>Wait, is that smell me?</description>
+                <baseMoodEffect>-8</baseMoodEffect>
+            </li>
+            <li>
+                <label>sload leather {0} etc</label>
+                <description>What if someone mistakes me for a Sload? Surely they'd kill me on sight.</description>
+                <baseMoodEffect>-10</baseMoodEffect>
+            </li>
+        </stages>
+        <nullifyingTraits>
+		</nullifyingTraits>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>ESCP_SloadLeatherApparel_Divine</defName>
+        <workerClass>ESCP.Sload.ThoughtWorker_Precept_SloadLeather</workerClass>
+        <validWhileDespawned>true</validWhileDespawned>
+        <stages>
+            <li>
+                <label>Sload leather {0}</label>
+                <description>The way it glides across my skin, simply divine!</description>
+                <baseMoodEffect>4</baseMoodEffect>
+            </li>
+            <li>
+                <label>Sload leather {0} (+1)</label>
+                <description>The smell, what a glorious smell!</description>
+                <baseMoodEffect>8</baseMoodEffect>
+            </li>
+            <li>
+                <label>Sload leather {0} (+2)</label>
+                <description>What glorious clothes!</description>
+                <baseMoodEffect>12</baseMoodEffect>
+            </li>
+            <li>
+                <label>Sload leather {0} etc</label>
+                <description>I feel like a Sload!</description>
+                <baseMoodEffect>20</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>ESCP_SloadLeatherApparel_Heretical</defName>
+        <workerClass>ESCP.Sload.ThoughtWorker_Precept_SloadLeather</workerClass>
+        <validWhileDespawned>true</validWhileDespawned>
+        <stages>
+            <li>
+                <label>Sload leather {0}</label>
+                <description>How could I wear this?</description>
+                <baseMoodEffect>-4</baseMoodEffect>
+            </li>
+            <li>
+                <label>Sload leather {0} (+1)</label>
+                <description>I'm a disgrace!</description>
+                <baseMoodEffect>-8</baseMoodEffect>
+            </li>
+            <li>
+                <label>Sload leather {0} (+2)</label>
+                <description>These clothes, the poor Sloads that were hurt to make this!</description>
+                <baseMoodEffect>-12</baseMoodEffect>
+            </li>
+            <li>
+                <label>Sload leather {0} etc</label>
+                <description>I should be burned at a stake!</description>
+                <baseMoodEffect>-20</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>ESCP_SloadsInColony_Reviled_Faction</defName>
+        <thoughtClass>ESCP.Sload.Thought_SloadsInFaction</thoughtClass>
+        <workerClass>ESCP.Sload.ThoughtWorker_Precept_SloadsInFaction</workerClass>
+        <doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+        <stages>
+            <li>
+                <label>Sloads in faction</label>
+                <description>There are Sloads living amongst us, why have we allowed this!</description>
+                <baseMoodEffect>-10</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>ESCP_SloadsInColony_Reviled_Map</defName>
+        <thoughtClass>ESCP.Sload.Thought_SloadsOnMap</thoughtClass>
+        <workerClass>ESCP.Sload.ThoughtWorker_Precept_SloadsOnMap</workerClass>
+        <doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+        <stages>
+            <li>
+                <label>Sloads on map</label>
+                <description>There are Sloads nearby, they should be purged!</description>
+                <baseMoodEffect>-10</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>ESCP_KilledSload_Reviled</defName>
+        <durationDays>5</durationDays>
+        <doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+        <stages>
+            <li>
+                <label>killed a Sload</label>
+                <description>We killed a Sload! The sight, the smell, the sounds, truly glorious!</description>
+                <baseMoodEffect>10</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>ESCP_SloadsOpinion_Reviled</defName>
+        <thoughtClass>Thought_SituationalSocial</thoughtClass>
+        <workerClass>ESCP.Sload.ThoughtWorker_Precept_SloadOpinion</workerClass>
+        <validWhileDespawned>true</validWhileDespawned>
+        <stages>
+            <li>
+                <label>Sload (Reviled)</label>
+                <baseOpinionOffset>-100</baseOpinionOffset>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>ESCP_SloadsInColony_Despised_Faction</defName>
+        <thoughtClass>ESCP.Sload.Thought_SloadsInFaction</thoughtClass>
+        <workerClass>ESCP.Sload.ThoughtWorker_Precept_SloadsInFaction</workerClass>
+        <doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+        <stages>
+            <li>
+                <label>Sloads in faction</label>
+                <description>There are Sloads living amongst us, they taint the very ground they walk on!</description>
+                <baseMoodEffect>-5</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>ESCP_SloadsInColony_Despised_Map</defName>
+        <thoughtClass>ESCP.Sload.Thought_SloadsOnMap</thoughtClass>
+        <workerClass>ESCP.Sload.ThoughtWorker_Precept_SloadsOnMap</workerClass>
+        <doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+        <stages>
+            <li>
+                <label>Sloads on map</label>
+                <description>There are Sloads nearby, their stench fills the air!</description>
+                <baseMoodEffect>-5</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>ESCP_SloadsOpinion_Despised</defName>
+        <thoughtClass>Thought_SituationalSocial</thoughtClass>
+        <workerClass>ESCP.Sload.ThoughtWorker_Precept_SloadOpinion</workerClass>
+        <validWhileDespawned>true</validWhileDespawned>
+        <stages>
+            <li>
+                <label>Sload (Despised)</label>
+                <baseOpinionOffset>-50</baseOpinionOffset>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>ESCP_SloadsInColony_Hated_Faction</defName>
+        <thoughtClass>ESCP.Sload.Thought_SloadsInFaction</thoughtClass>
+        <workerClass>ESCP.Sload.ThoughtWorker_Precept_SloadsInFaction</workerClass>
+        <doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+        <stages>
+            <li>
+                <label>Sloads in faction</label>
+                <description>There are Sloads living amongst us. Truly disgusting things.</description>
+                <baseMoodEffect>-2</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>ESCP_SloadsInColony_Hated_Map</defName>
+        <thoughtClass>ESCP.Sload.Thought_SloadsInFaction</thoughtClass>
+        <workerClass>ESCP.Sload.ThoughtWorker_Precept_SloadsInFaction</workerClass>
+        <doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+        <stages>
+            <li>
+                <label>Sloads in faction</label>
+                <description>There are Sloads walking amongst us. Truly disgusting things.</description>
+                <baseMoodEffect>-2</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>ESCP_SloadsOpinion_Hated</defName>
+        <thoughtClass>Thought_SituationalSocial</thoughtClass>
+        <workerClass>ESCP.Sload.ThoughtWorker_Precept_SloadOpinion</workerClass>
+        <validWhileDespawned>true</validWhileDespawned>
+        <stages>
+            <li>
+                <label>Sload (Hated)</label>
+                <baseOpinionOffset>-25</baseOpinionOffset>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>ESCP_SloadsInColony_ExaltedNone</defName>
+        <workerClass>ESCP.Sload.ThoughtWorker_Precept_NoSloadsInFaction</workerClass>
+        <doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+        <stages>
+            <li>
+                <label>no Sloads in faction</label>
+                <description>There are NO Sloads living amongst us! What have we done wrong?</description>
+                <baseMoodEffect>-10</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>ESCP_SloadsInColony_ExaltedNoneMap</defName>
+        <workerClass>ESCP.Sload.ThoughtWorker_Precept_NoSloadsOnMap</workerClass>
+        <doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+        <stages>
+            <li>
+                <label>no Sloads on map</label>
+                <description>There are NO Sloads walking amongst us! Why don't they want to live here?</description>
+                <baseMoodEffect>-10</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>ESCP_SloadsInColony_Exalted</defName>
+        <thoughtClass>ESCP.Sload.Thought_SloadsInFaction</thoughtClass>
+        <workerClass>ESCP.Sload.ThoughtWorker_Precept_SloadsInFaction</workerClass>
+        <doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+        <stages>
+            <li>
+                <label>Sloads in faction</label>
+                <description>There are Sloads living amongst us! What a truly glorious day it is!</description>
+                <baseMoodEffect>5</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>ESCP_SloadsInColony_ExaltedMap</defName>
+        <thoughtClass>ESCP.Sload.Thought_SloadsOnMap</thoughtClass>
+        <workerClass>ESCP.Sload.ThoughtWorker_Precept_SloadsOnMap</workerClass>
+        <doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+        <stages>
+            <li>
+                <label>Sloads on Map</label>
+                <description>There are Sloads walking amongst us! What a truly glorious day it is!</description>
+                <baseMoodEffect>5</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>ESCP_KilledSload_Exalted</defName>
+        <durationDays>60</durationDays>
+        <doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+        <stages>
+            <li>
+                <label>killed a Sload</label>
+                <description>We killed a Sload! How could we have allowed this!</description>
+                <baseMoodEffect>-50</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>ESCP_SloadsOpinion_Exalted</defName>
+        <thoughtClass>Thought_SituationalSocial</thoughtClass>
+        <workerClass>ESCP.Sload.ThoughtWorker_Precept_SloadOpinion</workerClass>
+        <validWhileDespawned>true</validWhileDespawned>
+        <stages>
+            <li>
+                <label>Sload (Exalted)</label>
+                <baseOpinionOffset>100</baseOpinionOffset>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>ESCP_HasThrassianPlague_Divine</defName>
+        <workerClass>ESCP.Sload.ThoughtWorker_Precept_ThrassianPlague</workerClass>
+        <doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+        <stages>
+            <li>
+                <label>has Thrassian Plague</label>
+                <description>Thrassian Plague, what a divine gift!</description>
+                <baseMoodEffect>10</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+</Defs>

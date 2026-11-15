@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>ESCP_Apparel_SloadRobe</defName>
+        <label>Sload robe</label>
+        <description>A light robe that covers the body cut to fit the oversized body of a Sload. Provides decent insulation from the heat. There are no buttons or belts, so a Sload can just slide in.</description>
+        <recipeMaker>
+            <researchPrerequisite>ComplexClothing</researchPrerequisite>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Pawn/Humanlike/Apparel/ESCP_Apparel_SloadRobe/ESCP_Apparel_SloadRobe</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.85</drawSize>
+        </graphicData>
+        <costStuffCount>210</costStuffCount>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <thingCategories>
+            <li>Apparel</li>
+        </thingCategories>
+        <statBases>
+            <MaxHitPoints>160</MaxHitPoints>
+            <WorkToMake>7000</WorkToMake>
+            <Mass>1.7</Mass>
+            <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.20</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.60</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>1.5</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <SocialImpact>0.15</SocialImpact>
+            <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.15</SlaveSuppressionOffset>
+        </equippedStatOffsets>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ESCP_Apparel_SloadRobe/ESCP_Apparel_SloadRobe</wornGraphicPath>
+            <layers>
+                <li>Shell</li>
+            </layers>
+            <tags>
+                <li>ESCP_SloadMedieval</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Worker</li>
+            </defaultOutfitTags>
+            <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_StandardApparel" />
+        <modExtensions>
+            <li Class="ESCP.Core.XenotypeExtension">
+                <whitelistedXenotypes>
+                    <li>ESCP_Xenotype_Sload</li>
+                </whitelistedXenotypes>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>ESCP_Apparel_SloadRobeRegal</defName>
+        <label>regal Sload robe</label>
+        <description>A light robe that covers the body, adorned with solid golden pauldrons cut to fit the oversized body of a Sload. Provides decent insulation from the heat, and improves social impact, though the added weight of the pauldrons slows the wearer slightly. There are no buttons or belts, so a Sload can just slide in.</description>
+        <recipeMaker>
+            <researchPrerequisite>ComplexClothing</researchPrerequisite>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Pawn/Humanlike/Apparel/ESCP_Apparel_SloadRobeRegal/ESCP_Apparel_SloadRobeRegal</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>0.85</drawSize>
+        </graphicData>
+        <costStuffCount>210</costStuffCount>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <costList>
+            <Gold>3</Gold>
+        </costList>
+        <thingCategories>
+            <li>Apparel</li>
+            <li MayRequire="Ludeon.RimWorld.Royalty">ApparelNoble</li>
+        </thingCategories>
+        <statBases>
+            <MaxHitPoints>160</MaxHitPoints>
+            <WorkToMake>7000</WorkToMake>
+            <Mass>10</Mass>
+            <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.20</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.60</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>2.5</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.4</MoveSpeed>
+            <SocialImpact>0.3</SocialImpact>
+            <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.30</SlaveSuppressionOffset>
+        </equippedStatOffsets>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ESCP_Apparel_SloadRobeRegal/ESCP_Apparel_SloadRobeRegal</wornGraphicPath>
+            <useWornGraphicMask>true</useWornGraphicMask>
+            <layers>
+                <li>Shell</li>
+            </layers>
+            <tags>
+                <li>ESCP_SloadRobeNoble</li>
+                <li MayRequire="Ludeon.RimWorld.Royalty">Royal</li>
+                <li MayRequire="Ludeon.RimWorld.Royalty">RoyalTier6</li>
+                <li MayRequire="Ludeon.RimWorld.Royalty">RoyalRobe</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Worker</li>
+            </defaultOutfitTags>
+            <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_StandardApparel" />
+        <modExtensions>
+            <li Class="ESCP.Core.XenotypeExtension">
+                <whitelistedXenotypes>
+                    <li>ESCP_Xenotype_Sload</li>
+                </whitelistedXenotypes>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="HatMakeableBase">
+        <defName>ESCP_Apparel_SloadHood</defName>
+        <label>Sload hood</label>
+        <description>A draped hood which covers the head and ears cut to fit on the oversized head of a Sload, and hide some of their unsightliness.</description>
+        <recipeMaker>
+            <researchPrerequisite>ComplexClothing</researchPrerequisite>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Pawn/Humanlike/Apparel/ESCP_Apparel_SloadHood/ESCP_Apparel_SloadHood</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <uiIconScale>1.15</uiIconScale>
+        <statBases>
+            <MaxHitPoints>80</MaxHitPoints>
+            <WorkToMake>6000</WorkToMake>
+            <Mass>0.1</Mass>
+            <EquipDelay>0.8</EquipDelay>
+            <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+        </statBases>
+        <equippedStatOffsets>
+            <SocialImpact>0.08</SocialImpact>
+            <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.05</SlaveSuppressionOffset>
+        </equippedStatOffsets>
+        <costStuffCount>65</costStuffCount>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <apparel>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ESCP_Apparel_SloadHood/ESCP_Apparel_SloadHood</wornGraphicPath>
+            <bodyPartGroups>
+                <li>UpperHead</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <tags>
+                <li>ESCP_SloadMedieval</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Worker</li>
+            </defaultOutfitTags>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_StandardApparel" />
+        <modExtensions>
+            <li Class="ESCP.Core.XenotypeExtension">
+                <whitelistedXenotypes>
+                    <li>ESCP_Xenotype_Sload</li>
+                </whitelistedXenotypes>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="HatMakeableBase">
+        <defName>ESCP_Apparel_SloadHeadCap</defName>
+        <label>Sload head cap</label>
+        <description>A tight fitting cap that covers the top of the head cut to fit on the oversized head of a Sload.</description>
+        <recipeMaker>
+            <researchPrerequisite>ComplexClothing</researchPrerequisite>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Pawn/Humanlike/Apparel/ESCP_Apparel_SloadHeadCap/ESCP_Apparel_SloadHeadCap</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <uiIconScale>1.15</uiIconScale>
+        <statBases>
+            <MaxHitPoints>80</MaxHitPoints>
+            <WorkToMake>6000</WorkToMake>
+            <Mass>0.1</Mass>
+            <EquipDelay>0.8</EquipDelay>
+            <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.05</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
+        </statBases>
+        <equippedStatOffsets>
+            <SocialImpact>0.05</SocialImpact>
+            <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.05</SlaveSuppressionOffset>
+        </equippedStatOffsets>
+        <costStuffCount>50</costStuffCount>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <apparel>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ESCP_Apparel_SloadHeadCap/ESCP_Apparel_SloadHeadCap</wornGraphicPath>
+            <bodyPartGroups>
+                <li>UpperHead</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <tags>
+                <li>ESCP_SloadMedieval</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Worker</li>
+            </defaultOutfitTags>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_StandardApparel" />
+        <modExtensions>
+            <li Class="ESCP.Core.XenotypeExtension">
+                <whitelistedXenotypes>
+                    <li>ESCP_Xenotype_Sload</li>
+                </whitelistedXenotypes>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="HatMakeableBase">
+        <defName>ESCP_Apparel_SloadAshMask</defName>
+        <label>Sload ash mask</label>
+        <description>A specialized mask which allows unhindered breathing during ash storms cut to fit on the oversized head of a Sload.</description>
+        <recipeMaker>
+            <researchPrerequisite>Smithing</researchPrerequisite>
+            <recipeUsers Inherit="False">
+                <li>ElectricSmithy</li>
+                <li>FueledSmithy</li>
+            </recipeUsers>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Pawn/Humanlike/Apparel/ESCP_Apparel_SloadAshMask/ESCP_Apparel_SloadAshMask</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <uiIconScale>1.15</uiIconScale>
+        <statBases>
+            <MaxHitPoints>80</MaxHitPoints>
+            <WorkToMake>12000</WorkToMake>
+            <Mass>0.15</Mass>
+            <EquipDelay>1.2</EquipDelay>
+            <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
+        </statBases>
+        <equippedStatOffsets>
+            <ToxicResistance>0.15</ToxicResistance>
+            <SocialImpact>0.1</SocialImpact>
+        </equippedStatOffsets>
+        <costStuffCount>60</costStuffCount>
+        <stuffCategories>
+            <li>Metallic</li>
+            <li>Woody</li>
+        </stuffCategories>
+        <costList>
+		</costList>
+        <apparel>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ESCP_Apparel_SloadAshMask/ESCP_Apparel_SloadAshMask</wornGraphicPath>
+            <useWornGraphicMask>true</useWornGraphicMask>
+            <bodyPartGroups>
+                <li>Eyes</li>
+                <li>Mouth</li>
+                <li>Teeth</li>
+            </bodyPartGroups>
+            <layers>
+                <li>EyeCover</li>
+            </layers>
+            <tags>
+                <li>ESCP_SloadMedieval</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Worker</li>
+            </defaultOutfitTags>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_StandardApparel" />
+        <modExtensions>
+            <li Class="ESCP.Core.XenotypeExtension">
+                <whitelistedXenotypes>
+                    <li>ESCP_Xenotype_Sload</li>
+                </whitelistedXenotypes>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="HatMakeableBase">
+        <defName>ESCP_Apparel_SloadColovianHelm</defName>
+        <label>Sload helm</label>
+        <description>A practical and stylish hat cut to fit on the oversized head of a Sload. Improves social impact, and is rather warm.</description>
+        <recipeMaker>
+            <researchPrerequisite>ComplexClothing</researchPrerequisite>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Pawn/Humanlike/Apparel/ESCP_Apparel_SloadColovianHelm/ESCP_Apparel_SloadColovianHelm</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <uiIconScale>1.15</uiIconScale>
+        <statBases>
+            <MaxHitPoints>80</MaxHitPoints>
+            <WorkToMake>1800</WorkToMake>
+            <Mass>0.14</Mass>
+            <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.40</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>0.8</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <SocialImpact>0.15</SocialImpact>
+            <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.05</SlaveSuppressionOffset>
+        </equippedStatOffsets>
+        <costStuffCount>70</costStuffCount>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <apparel>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ESCP_Apparel_SloadColovianHelm/ESCP_Apparel_SloadColovianHelm</wornGraphicPath>
+            <bodyPartGroups>
+                <li>UpperHead</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <tags>
+                <li>ESCP_SloadMedieval</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Worker</li>
+            </defaultOutfitTags>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_StandardApparel" />
+        <modExtensions>
+            <li Class="ESCP.Core.XenotypeExtension">
+                <whitelistedXenotypes>
+                    <li>ESCP_Xenotype_Sload</li>
+                </whitelistedXenotypes>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="ApparelNoQualityBase">
+        <defName>ESCP_Apparel_SloadBarrierBelt</defName>
+        <label>Sload barrier belt</label>
+        <description>An enchanted belt cut to fit the bulk of a Sload. It raises a barrier that tries to stop every incoming blow and missile, then needs a long while to recover once it breaks. Unlike a shield belt, it does not stop the wearer from casting or shooting out.</description>
+        <thingClass>Apparel</thingClass>
+        <techLevel>Medieval</techLevel>
+        <graphicData>
+            <texPath>Things/Pawn/Humanlike/Apparel/ESCP_SloadBarrierBelt</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <tickerType>Normal</tickerType>
+        <smeltable>false</smeltable>
+        <statBases>
+            <Mass>2</Mass>
+            <MarketValue>1000</MarketValue>
+            <Flammability>0.4</Flammability>
+            <EnergyShieldRechargeRate>0.01</EnergyShieldRechargeRate>
+            <EnergyShieldEnergyMax>1.0</EnergyShieldEnergyMax>
+            <EquipDelay>2</EquipDelay>
+        </statBases>
+        <thingCategories>
+            <li>ApparelUtility</li>
+        </thingCategories>
+        <apparel>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <careIfWornByCorpse>false</careIfWornByCorpse>
+            <careIfDamaged>false</careIfDamaged>
+            <wearPerDay>0</wearPerDay>
+            <bodyPartGroups>
+                <li>Waist</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Belt</li>
+            </layers>
+            <tags>
+                <li>ESCP_SloadBelt</li>
+            </tags>
+        </apparel>
+        <comps>
+            <li Class="CompProperties_Shield">
+                <blocksRangedWeapons>false</blocksRangedWeapons>
+                <minDrawSize>2</minDrawSize>
+                <maxDrawSize>3</maxDrawSize>
+            </li>
+        </comps>
+        <tradeTags>
+            <li>ESCP_SloadElixir</li>
+        </tradeTags>
+        <modExtensions>
+            <li Class="ESCP.Core.XenotypeExtension">
+                <whitelistedXenotypes>
+                    <li>ESCP_Xenotype_Sload</li>
+                </whitelistedXenotypes>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+</Defs>

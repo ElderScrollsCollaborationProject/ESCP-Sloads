@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <LifeStageDef>
+        <defName>ESCP_LifeStage_SloadAdult</defName>
+        <label>adult</label>
+        <workerClass MayRequire="Ludeon.RimWorld.Biotech">LifeStageWorker_HumanlikeAdult</workerClass>
+        <visible>false</visible>
+        <reproductive>true</reproductive>
+        <sittingOffset>0.18</sittingOffset>
+        <bodyWidth>3</bodyWidth>
+        <headSizeFactor>2</headSizeFactor>
+        <silhouetteGraphicData>
+            <texPath>Things/Pawn/Humanlike/Silhouettes/Silhouette_HumanAdult</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>2</drawSize>
+        </silhouetteGraphicData>
+    </LifeStageDef>
+
+</Defs>

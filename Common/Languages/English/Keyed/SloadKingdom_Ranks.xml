@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+    <ESCP_Rank_Mentor_SloadKingdom>Overseer:</ESCP_Rank_Mentor_SloadKingdom>
+    <ESCP_Rank_Promote_SloadKingdom>Rise in Thras</ESCP_Rank_Promote_SloadKingdom>
+    <ESCP_Rank_Promoted_Text_SloadKingdom>The coral kings are, in their slow way, pleased. {0} is now {1}.</ESCP_Rank_Promoted_Text_SloadKingdom>
+    <ESCP_Rank_Rally_Title_SloadKingdom>{0} invokes the drowned dead</ESCP_Rank_Rally_Title_SloadKingdom>
+    <ESCP_Rank_Rally_Text_SloadKingdom>{0} calls on the drowned dead of Thras, and every one of {1} on the field fights with a cold, wet patience.</ESCP_Rank_Rally_Text_SloadKingdom>
+    <ESCP_Rank_InspectionComplete_Commended_SloadKingdom>{0} inspects {1}'s vestments and finds them suitably damp.</ESCP_Rank_InspectionComplete_Commended_SloadKingdom>
+    <ESCP_Rank_InspectionComplete_Reprimanded_SloadKingdom>{0} inspects {1}'s vestments and finds them distressingly dry.</ESCP_Rank_InspectionComplete_Reprimanded_SloadKingdom>
+    <ESCP_Rank_PunishmentAssigned_SloadKingdom>{0} sends {1} to the brine pits.</ESCP_Rank_PunishmentAssigned_SloadKingdom>
+
+</LanguageData>

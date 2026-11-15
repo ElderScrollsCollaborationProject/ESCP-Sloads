@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <GoodwillSituationDef>
+        <defName>ESCP_Sload_Reviled</defName>
+        <label>Sload (Reviled)</label>
+        <workerClass>ESCP.Sload.GoodwillSituationWorker_Sload</workerClass>
+        <naturalGoodwillOffset>-100</naturalGoodwillOffset>
+        <modExtensions>
+            <li Class="ESCP_RaceTools.IdeoProperties">
+                <requiredPreceptDef>ESCP_SloadOpinion_Reviled</requiredPreceptDef>
+            </li>
+        </modExtensions>
+    </GoodwillSituationDef>
+
+    <GoodwillSituationDef>
+        <defName>ESCP_Sload_Despised</defName>
+        <label>Sload (Despised)</label>
+        <workerClass>ESCP.Sload.GoodwillSituationWorker_Sload</workerClass>
+        <naturalGoodwillOffset>-50</naturalGoodwillOffset>
+        <modExtensions>
+            <li Class="ESCP_RaceTools.IdeoProperties">
+                <requiredPreceptDef>ESCP_SloadOpinion_Despised</requiredPreceptDef>
+            </li>
+        </modExtensions>
+    </GoodwillSituationDef>
+
+    <GoodwillSituationDef>
+        <defName>ESCP_Sload_Hated</defName>
+        <label>Sload (Hated)</label>
+        <workerClass>ESCP.Sload.GoodwillSituationWorker_Sload</workerClass>
+        <naturalGoodwillOffset>-25</naturalGoodwillOffset>
+        <modExtensions>
+            <li Class="ESCP_RaceTools.IdeoProperties">
+                <requiredPreceptDef>ESCP_SloadOpinion_Hated</requiredPreceptDef>
+            </li>
+        </modExtensions>
+    </GoodwillSituationDef>
+
+    <GoodwillSituationDef>
+        <defName>ESCP_Sload_Exalted</defName>
+        <label>Sload (Exalted)</label>
+        <workerClass>ESCP.Sload.GoodwillSituationWorker_Sload</workerClass>
+        <naturalGoodwillOffset>100</naturalGoodwillOffset>
+        <modExtensions>
+            <li Class="ESCP_RaceTools.IdeoProperties">
+                <requiredPreceptDef>ESCP_SloadOpinion_Exalted</requiredPreceptDef>
+            </li>
+        </modExtensions>
+    </GoodwillSituationDef>
+
+</Defs>

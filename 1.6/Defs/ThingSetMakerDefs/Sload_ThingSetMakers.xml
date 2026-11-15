@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ThingSetMakerDef>
+        <defName>ESCP_Sload_RaidLootMaker</defName>
+        <root Class="ThingSetMaker_MarketValue">
+            <fixedParams>
+                <filter>
+                    <thingDefs>
+                        <li>Silver</li>
+                        <li>Jade</li>
+                        <li>MedicineHerbal</li>
+                        <li>Pemmican</li>
+                        <li>ESCP_SloadSoap</li>
+                        <li>ESCP_Egg_Sload</li>
+                    </thingDefs>
+                </filter>
+            </fixedParams>
+        </root>
+    </ThingSetMakerDef>
+
+</Defs>

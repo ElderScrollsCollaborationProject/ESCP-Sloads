@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <GoodwillSituationDef ParentName="ESCP_GoodwillSituation_Precept">
+        <defName>ESCP_Goodwill_Necromancy</defName>
+        <label>practices necromancy</label>
+        <naturalGoodwillOffset>-20</naturalGoodwillOffset>
+        <modExtensions>
+            <li Class="ESCP_RaceTools.FactionGoodwillProperties">
+                <FactionTagA>ESCP_OpposesNecromancy</FactionTagA>
+                <preceptDef>ESCP_SloadThrallOpinion_Allowed</preceptDef>
+            </li>
+        </modExtensions>
+    </GoodwillSituationDef>
+
+    <GoodwillSituationDef ParentName="ESCP_GoodwillSituation_Precept">
+        <defName>ESCP_Goodwill_AllFlags</defName>
+        <label>reveres the Sload</label>
+        <naturalGoodwillOffset>-30</naturalGoodwillOffset>
+        <modExtensions>
+            <li Class="ESCP_RaceTools.FactionGoodwillProperties">
+                <FactionTagA>ESCP_AllFlags</FactionTagA>
+                <preceptDef>ESCP_SloadOpinion_Exalted</preceptDef>
+            </li>
+        </modExtensions>
+    </GoodwillSituationDef>
+
+</Defs>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <RulePackDef>
+        <defName>ESCP_SloadNamerRitualPlague</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_ritualName(p=2)-&gt;[memeAdjective] [plague]</li>
+                <li>r_ritualName-&gt;[plague] of [chosenTheme]</li>
+                <li>r_ritualName-&gt;[whispers] of [chosenTheme]</li>
+                <li>r_ritualName-&gt;[chosenAdjective] [plague]</li>
+                <li>r_ritualName-&gt;[keyDeity]'s [plague]</li>
+                <li>r_ritualName-&gt;[plague] of [keyDeity]</li>
+                <li>r_ritualName-&gt;[plague] of [memeConcept]</li>
+                <li>r_ritualName-&gt;[plague] of [chosenIdeoName]</li>
+                <li>plague-&gt;plague</li>
+                <li>plague-&gt;epidemic</li>
+                <li>plague-&gt;affliction</li>
+                <li>plague-&gt;blight</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+</Defs>

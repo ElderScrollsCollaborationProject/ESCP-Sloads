@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ThingDef ParentName="Human">
+        <defName>ESCP_Race_Sload</defName>
+        <label>Sload</label>
+        <description>An emotionless race of slug-like creatures from the coral kingdom of Thras. Sloads are despised almost everywhere for their necromancy, though Sload soap sells well enough regardless of where it comes from.\n\nSloads are clever but enormous, slow and clumsy. They are fine researchers and alchemists and poor at nearly everything else. Most clothing will not fit them, which suits them, since they do not care.</description>
+        <statBases>
+            <MarketValue>2000</MarketValue>
+            <MoveSpeed>2.6</MoveSpeed>
+            <ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.04</ArmorRating_Sharp>
+            <ComfyTemperatureMin>10</ComfyTemperatureMin>
+            <ComfyTemperatureMax>30</ComfyTemperatureMax>
+            <PsychicSensitivity>1.5</PsychicSensitivity>
+            <ImmunityGainSpeed>2</ImmunityGainSpeed>
+            <InjuryHealingFactor>2.0</InjuryHealingFactor>
+            <GlobalLearningFactor>0.75</GlobalLearningFactor>
+            <DrugSynthesisSpeed>1.5</DrugSynthesisSpeed>
+            <ResearchSpeed>1.5</ResearchSpeed>
+            <ToxicResistance>0.75</ToxicResistance>
+            <GeneralLaborSpeed>0.5</GeneralLaborSpeed>
+            <WorkSpeedGlobal>0.5</WorkSpeedGlobal>
+            <PawnBeauty>-2</PawnBeauty>
+            <RestRateMultiplier>0.7</RestRateMultiplier>
+            <FilthRate>4</FilthRate>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_EggLayer">
+                <eggFertilizedDef>ESCP_Egg_Sload</eggFertilizedDef>
+                <eggUnfertilizedDef>ESCP_Egg_Sload</eggUnfertilizedDef>
+                <eggFertilizationCountMax>1</eggFertilizationCountMax>
+                <eggLayIntervalDays>8</eggLayIntervalDays>
+                <eggProgressUnfertilizedMax>1</eggProgressUnfertilizedMax>
+                <eggCountRange>3~5</eggCountRange>
+                <eggLayFemaleOnly>false</eggLayFemaleOnly>
+            </li>
+        </comps>
+        <race>
+            <hasGenders>false</hasGenders>
+            <baseBodySize>3</baseBodySize>
+            <baseHealthScale>1.5</baseHealthScale>
+            <baseHungerRate>0.7</baseHungerRate>
+            <lifeExpectancy>300</lifeExpectancy>
+            <fleshType>ESCP_Flesh_Sload</fleshType>
+            <bloodDef>ESCP_Filth_BloodSload</bloodDef>
+            <leatherDef>ESCP_Leather_Sload</leatherDef>
+            <deathAction>
+                <workerClass>ESCP_RaceTools.DeathActionWorker_HistoryEventOnDeath</workerClass>
+            </deathAction>
+            <ageGenerationCurve>
+                <points>
+                    <li>(20, 0)</li>
+                    <li>(40, 100)</li>
+                    <li>(200, 100)</li>
+                    <li>(280, 0)</li>
+                </points>
+            </ageGenerationCurve>
+            <lifeStageAges Inherit="False">
+                <li>
+                    <def>HumanlikeBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>HumanlikeChild</def>
+                    <minAge>3</minAge>
+                </li>
+                <li>
+                    <def>HumanlikeTeenager</def>
+                    <minAge>13</minAge>
+                </li>
+                <li>
+                    <def>ESCP_LifeStage_SloadAdult</def>
+                    <minAge>18</minAge>
+                </li>
+            </lifeStageAges>
+        </race>
+        <modExtensions>
+            <li Class="ESCP.Core.RaceExtension_Quadruped">
+                <bodyTypes>
+                    <li>ESCP_Sload</li>
+                </bodyTypes>
+                <childBodyType>ESCP_Sload</childBodyType>
+            </li>
+            <li Class="ESCP.Core.RaceExtension_NameMaker">
+                <nameMaker>ESCP_Namer_Sload</nameMaker>
+            </li>
+            <li Class="ESCP.Core.RaceExtension_Thoughts">
+                <allowedThoughts>
+                    <li>NeedFood</li>
+                    <li>NeedRest</li>
+                    <li>NeedRoomSize</li>
+                    <li>NeedOutdoors</li>
+                    <li>NeedIndoors</li>
+                    <li>NeedJoy</li>
+                    <li>DrugDesireFascination</li>
+                    <li>EnvironmentCold</li>
+                    <li>EnvironmentHot</li>
+                    <li>Pain</li>
+                    <li>Sick</li>
+                    <li>PsychicDrone</li>
+                    <li>PsychicEmanatorSoothe</li>
+                    <li>ArtifactMoodBoost</li>
+                    <li>Joywire</li>
+                    <li>MissingTongue</li>
+                    <li>DoingPassionateWork</li>
+                    <li>SleepDisturbed</li>
+                    <li>SleptInCold</li>
+                    <li>SleptInHeat</li>
+                    <li>WasImprisoned</li>
+                    <li>MyOrganHarvested</li>
+                    <li>MasochistPain</li>
+                    <li>ProsthophileNoProsthetic</li>
+                    <li>ProsthophileHappy</li>
+                    <li>ProsthophobeUnhappy</li>
+                    <li>BrawlerUnhappy</li>
+                    <li>PyromaniacHappy</li>
+                    <li>UndergrounderIndoors</li>
+                    <li>UndergrounderUnderground</li>
+                    <li>UndergrounderOutdoors</li>
+                    <li>NightOwlDuringTheDay</li>
+                    <li>NightOwlDuringTheNight</li>
+                    <li>Greedy</li>
+                    <li>Jealous</li>
+                    <li>Ascetic</li>
+                    <li>ClothedNudist</li>
+                    <li>ESCP_Thought_SloadEmotionless</li>
+                    <li MayRequire="Ludeon.RimWorld.Royalty">AteFoodInappropriateForTitle</li>
+                    <li MayRequire="Ludeon.RimWorld.Royalty">TerribleBestowingCeremony</li>
+                    <li MayRequire="Ludeon.RimWorld.Royalty">UnimpressiveBestowingCeremony</li>
+                    <li MayRequire="Ludeon.RimWorld.Royalty">HonorableBestowingCeremony</li>
+                    <li MayRequire="Ludeon.RimWorld.Royalty">GrandioseBestowingCeremony</li>
+                    <li MayRequire="Ludeon.RimWorld.Royalty">ReignedInThroneroom</li>
+                    <li MayRequire="Ludeon.RimWorld.Royalty">DecreeMet</li>
+                    <li MayRequire="Ludeon.RimWorld.Royalty">DecreeFailed</li>
+                    <li MayRequire="Ludeon.RimWorld.Royalty">Disinherited</li>
+                    <li MayRequire="Ludeon.RimWorld.Royalty">NeuroquakeEcho</li>
+                    <li MayRequire="Ludeon.RimWorld.Royalty">DecreeUnmet</li>
+                    <li MayRequire="Ludeon.RimWorld.Royalty">PsychicEntropyOverloaded</li>
+                    <li MayRequire="Ludeon.RimWorld.Royalty">AnimaScream</li>
+                    <li MayRequire="Ludeon.RimWorld.Royalty">Joyfuzz</li>
+                    <li MayRequire="Ludeon.RimWorld.Royalty">TitleApparelRequirementNotMet</li>
+                    <li MayRequire="Ludeon.RimWorld.Royalty">TitleApparelMinQualityNotMet</li>
+                    <li MayRequire="Ludeon.RimWorld.Royalty">LostTitle</li>
+                    <li MayRequire="Ludeon.RimWorld.Royalty">TitleThroneroomRequirementsNotMet</li>
+                    <li MayRequire="Ludeon.RimWorld.Royalty">TitleBedroomRequirementsNotMet</li>
+                    <li MayRequire="Ludeon.RimWorld.Royalty">TitleNoThroneRoom</li>
+                    <li MayRequire="Ludeon.RimWorld.Royalty">TitleNoPersonalBedroom</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">IdeoBuildingMissing</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">IdeoRoleLost</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">IdeoRoleEmpty</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">ConnectedTreeDied</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">PsychicArchotechEmanator_Major</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">PsychicArchotechEmanator_Grand</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">PsychicArchotechEmanator_Core</li>
+                </allowedThoughts>
+            </li>
+            <li Class="ESCP_RaceTools.RaceProperties">
+                <eventOnDeath>ESCP_KilledSload</eventOnDeath>
+                <thrassianPlagueImmune>true</thrassianPlagueImmune>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+</Defs>

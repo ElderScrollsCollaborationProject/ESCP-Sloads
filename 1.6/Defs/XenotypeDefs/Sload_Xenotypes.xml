@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <XenotypeDef>
+        <defName>ESCP_Xenotype_Sload</defName>
+        <label>Sload</label>
+        <iconPath>World/WorldObjects/Expanding/ESCP_SloadSettlement</iconPath>
+        <inheritable>true</inheritable>
+        <description>The Sload of Thras, huge slug-like necromancers who feel almost nothing. They are clever, patient and slow, and they treat the dead as a resource like any other.</description>
+        <descriptionShort>Huge, emotionless slug folk from Thras who raise the dead as thralls.</descriptionShort>
+        <genes>
+            <li>ESCP_Gene_Sload_Body</li>
+            <li>ESCP_Gene_Sload_Necromancy</li>
+            <li>ESCP_Gene_Sload_Emotionless</li>
+            <li>ESCP_Gene_Sload_DiseaseImmunity</li>
+            <li>DarkVision</li>
+            <li>ESCP_Gene_Sload_Skin1</li>
+            <li>ESCP_Gene_Sload_Skin2</li>
+            <li>ESCP_Gene_Sload_Skin3</li>
+            <li>ESCP_Gene_Sload_Skin4</li>
+            <li>ESCP_Gene_Sload_Skin5</li>
+            <li>ESCP_Gene_Sload_Skin6</li>
+            <li>ESCP_Gene_Sload_Skin7</li>
+            <li>ESCP_Gene_Sload_Skin8</li>
+            <li>ESCP_Gene_Sload_Skin9</li>
+            <li>ESCP_Gene_Sload_Skin10</li>
+            <li>ESCP_Gene_Sload_Skin11</li>
+            <li>ESCP_Gene_Sload_Skin12</li>
+            <li>ESCP_Gene_Sload_Skin13</li>
+        </genes>
+        <modExtensions>
+            <li Class="ESCP.Core.XenotypeExtension_Race">
+                <pawnKind>ESCP_Pawnkind_Sload_Colonist</pawnKind>
+            </li>
+        </modExtensions>
+    </XenotypeDef>
+
+</Defs>

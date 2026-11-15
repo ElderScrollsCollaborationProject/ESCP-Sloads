@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ScenarioDef>
+        <defName>ESCP_Scenario_LoneSload</defName>
+        <label>Lonesome Sload</label>
+        <description>You had a nice little cave with everything you would ever need, and best of all no neighbors. Then someone built a village nearby. They came for you in the night with pitchforks and torches, and now you are on your own.\n\nThis scenario is not fair. It is very hard, and you can die for any reason.</description>
+        <scenario>
+            <summary>Alone, naked and badly prepared. A hard and unfair start.</summary>
+            <playerFaction>
+                <def>PlayerFaction</def>
+                <factionDef>ESCP_Faction_Sload_Player</factionDef>
+            </playerFaction>
+            <surfaceLayer>
+                <def>SurfaceLayerFixed</def>
+                <tag>Surface</tag>
+                <layer>Surface</layer>
+                <settingsDef>Surface</settingsDef>
+                <hide>true</hide>
+                <connections>
+                    <Orbit MayRequire="Ludeon.RimWorld.Odyssey">
+                        <zoomMode>ZoomOut</zoomMode>
+                    </Orbit>
+                </connections>
+            </surfaceLayer>
+            <parts>
+                <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+                    <def>ConfigPage_ConfigureStartingPawns</def>
+                    <pawnCount>1</pawnCount>
+                    <pawnChoiceCount>8</pawnChoiceCount>
+                </li>
+                <li Class="ScenPart_PlayerPawnsArriveMethod">
+                    <def>PlayerPawnsArriveMethod</def>
+                    <visible>false</visible>
+                    <method>Standing</method>
+                </li>
+                <li Class="ScenPart_Naked">
+                    <def>Naked</def>
+                    <context>PlayerStarter</context>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Silver</thingDef>
+                    <count>100</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Pemmican</thingDef>
+                    <count>50</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>MedicineHerbal</thingDef>
+                    <count>5</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>ESCP_SloadElixir_Refresh</thingDef>
+                    <count>1</count>
+                </li>
+                <li Class="ScenPart_GameStartDialog">
+                    <def>GameStartDialog</def>
+                    <text>They came for you in the night, pitchforks and torches held high. Luckily they were not quiet about it, and you slipped away with a few handfuls of essentials.\n\nNow you are lost in the wilds and entirely alone.</text>
+                    <closeSound>GameStartSting</closeSound>
+                </li>
+            </parts>
+        </scenario>
+    </ScenarioDef>
+
+</Defs>

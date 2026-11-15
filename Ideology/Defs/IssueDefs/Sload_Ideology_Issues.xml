@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <IssueDef>
+        <defName>ESCP_SloadLeather</defName>
+        <label>Sload leather</label>
+        <iconPath>Things/Item/Resource/ESCP_SloadLeather/ESCP_SloadLeather_a</iconPath>
+    </IssueDef>
+
+    <IssueDef>
+        <defName>ESCP_SloadOpinion</defName>
+        <label>sloads</label>
+        <iconPath>World/WorldObjects/Expanding/ESCP_SloadSettlement</iconPath>
+    </IssueDef>
+
+    <IssueDef>
+        <defName>ESCP_SloadThrallOpinion</defName>
+        <label>sload thralls</label>
+        <iconPath>UI/Abilities/ESCP_SloadCreateThrall</iconPath>
+    </IssueDef>
+
+    <IssueDef>
+        <defName>ESCP_SloadThrassianImmunity</defName>
+        <label>Thrassian Plague</label>
+        <iconPath>UI/Abilities/ESCP_SloadReleasePlague</iconPath>
+    </IssueDef>
+
+</Defs>

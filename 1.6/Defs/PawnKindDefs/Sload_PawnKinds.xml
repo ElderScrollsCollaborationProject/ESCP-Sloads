@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <PawnKindDef Name="ESCP_SloadKindBase" Abstract="True">
+        <race>ESCP_Race_Sload</race>
+        <defaultFactionDef>ESCP_Faction_Sload</defaultFactionDef>
+        <xenotypeSet>
+            <xenotypeChances>
+                <ESCP_Xenotype_Sload>1</ESCP_Xenotype_Sload>
+            </xenotypeChances>
+        </xenotypeSet>
+        <useFactionXenotypes>false</useFactionXenotypes>
+        <maxGenerationAge>280</maxGenerationAge>
+        <minGenerationAge>25</minGenerationAge>
+        <chemicalAddictionChance>0.05</chemicalAddictionChance>
+        <invNutrition>2.55</invNutrition>
+        <invFoodDef>Pemmican</invFoodDef>
+        <itemQuality>Normal</itemQuality>
+        <gearHealthRange>0.6~1.5</gearHealthRange>
+        <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+        <apparelAllowHeadgearChance>0.6</apparelAllowHeadgearChance>
+        <apparelTags>
+            <li>ESCP_SloadMedieval</li>
+        </apparelTags>
+        <initialWillRange>0~1</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
+        <backstoryFiltersOverride>
+            <li>
+                <categoriesChildhood>
+                    <li>ESCP_Backstory_Sload_Child</li>
+                </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>ESCP_Backstory_Sload_Adult</li>
+                </categoriesAdulthood>
+            </li>
+        </backstoryFiltersOverride>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="ESCP_SloadKindBase">
+        <defName>ESCP_Pawnkind_Sload_Colonist</defName>
+        <label>Sload</label>
+        <combatPower>40</combatPower>
+        <apparelMoney>350~600</apparelMoney>
+        <weaponMoney>0~0</weaponMoney>
+        <weaponTags>
+
+        </weaponTags>
+        <apparelRequired>
+
+        </apparelRequired>
+        <defaultFactionDef>ESCP_Faction_Sload_Player</defaultFactionDef>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="ESCP_SloadKindBase">
+        <defName>ESCP_Pawnkind_Sload_Subject</defName>
+        <label>Sload subject</label>
+        <combatPower>40</combatPower>
+        <apparelMoney>50~150</apparelMoney>
+        <weaponMoney>0~0</weaponMoney>
+        <weaponTags>
+
+        </weaponTags>
+        <apparelRequired>
+
+        </apparelRequired>
+        <itemQuality>Poor</itemQuality>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="ESCP_SloadKindBase">
+        <defName>ESCP_Pawnkind_Sload_Trader</defName>
+        <label>Sload trader</label>
+        <combatPower>40</combatPower>
+        <apparelMoney>150~250</apparelMoney>
+        <weaponMoney>0~0</weaponMoney>
+        <weaponTags>
+
+        </weaponTags>
+        <apparelRequired>
+            <li>ESCP_Apparel_SloadColovianHelm</li>
+            <li>ESCP_Apparel_SloadRobe</li>
+        </apparelRequired>
+        <trader>true</trader>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="ESCP_SloadKindBase">
+        <defName>ESCP_Pawnkind_Sload_PlagueBearer</defName>
+        <label>plague bearer</label>
+        <combatPower>65</combatPower>
+        <apparelMoney>200~550</apparelMoney>
+        <weaponMoney>600~600</weaponMoney>
+        <weaponTags>
+            <li>ESCP_SloadPlagueStaff</li>
+        </weaponTags>
+        <apparelRequired>
+            <li>ESCP_Apparel_SloadRobe</li>
+            <li>ESCP_Apparel_SloadHeadCap</li>
+        </apparelRequired>
+        <canBeSapper>true</canBeSapper>
+        <initialWillRange>2~4</initialWillRange>
+        <initialResistanceRange>13~20</initialResistanceRange>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="ESCP_SloadKindBase">
+        <defName>ESCP_Pawnkind_Sload_Lord</defName>
+        <label>Sload lord</label>
+        <combatPower>85</combatPower>
+        <apparelMoney>1450~1750</apparelMoney>
+        <weaponMoney>600~1000</weaponMoney>
+        <weaponTags>
+            <li>ESCP_SloadPlagueStaff</li>
+        </weaponTags>
+        <apparelRequired>
+            <li>ESCP_Apparel_SloadHood</li>
+            <li>ESCP_Apparel_SloadRobeRegal</li>
+            <li>ESCP_Apparel_SloadBarrierBelt</li>
+        </apparelRequired>
+        <minGenerationAge>60</minGenerationAge>
+        <factionLeader>true</factionLeader>
+        <canBeSapper>true</canBeSapper>
+        <initialWillRange>3~5</initialWillRange>
+        <initialResistanceRange>38~58</initialResistanceRange>
+    </PawnKindDef>
+
+</Defs>

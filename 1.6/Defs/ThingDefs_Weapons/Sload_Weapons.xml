@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ThingDef ParentName="BaseGun">
+        <defName>ESCP_Weapon_SloadPlagueStaff</defName>
+        <label>Thrassian Plague staff</label>
+        <description>An oddly ornate staff for something made on Thras. A crystal focus at its head swirls with miasma, which it hurls in bursting clouds of Thrassian Plague.</description>
+        <techLevel>Medieval</techLevel>
+        <smeltable>false</smeltable>
+        <graphicData>
+            <texPath>Things/Item/Special/ESCP_SloadThrassianStaff</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Flammability>0</Flammability>
+            <Mass>1.5</Mass>
+            <AccuracyTouch>0.18</AccuracyTouch>
+            <AccuracyShort>0.26</AccuracyShort>
+            <AccuracyMedium>0.26</AccuracyMedium>
+            <AccuracyLong>0.18</AccuracyLong>
+            <RangedWeapon_Cooldown>3.4</RangedWeapon_Cooldown>
+            <MarketValue>600</MarketValue>
+        </statBases>
+        <tradeTags>
+            <li>ESCP_SloadStaff</li>
+        </tradeTags>
+        <weaponTags>
+            <li>ESCP_SloadPlagueStaff</li>
+        </weaponTags>
+        <equippedAngleOffset>-45</equippedAngleOffset>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>ESCP_Projectile_SloadPlagueOrb</defaultProjectile>
+                <forcedMissRadius>3.5</forcedMissRadius>
+                <ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
+                <warmupTime>1.25</warmupTime>
+                <range>16.9</range>
+                <burstShotCount>1</burstShotCount>
+                <soundCast>InfernoCannon_Fire</soundCast>
+                <soundCastTail>GunTail_Light</soundCastTail>
+                <muzzleFlashScale>14</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+
+</Defs>

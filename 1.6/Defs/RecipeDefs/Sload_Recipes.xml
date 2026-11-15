@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <RecipeDef>
+        <defName>ESCP_Recipe_SloadSoap</defName>
+        <label>make Sload soap</label>
+        <description>Boil 10 Sload grubs down into 5 bars of Sload soap.</description>
+        <jobString>Making Sload soap.</jobString>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_CookMeal</soundWorking>
+        <workAmount>500</workAmount>
+        <workSpeedStat>CookSpeed</workSpeedStat>
+        <workSkill>Cooking</workSkill>
+        <recipeUsers>
+            <li>FueledStove</li>
+            <li>ElectricStove</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ESCP_Egg_Sload</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>ESCP_Egg_Sload</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <ESCP_SloadSoap>5</ESCP_SloadSoap>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef>
+        <defName>ESCP_Recipe_SloadSoapBulk</defName>
+        <label>make Sload soap x4</label>
+        <description>Boil 40 Sload grubs down into 20 bars of Sload soap.</description>
+        <jobString>Making Sload soap.</jobString>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_CookMeal</soundWorking>
+        <workAmount>1000</workAmount>
+        <workSpeedStat>CookSpeed</workSpeedStat>
+        <workSkill>Cooking</workSkill>
+        <recipeUsers>
+            <li>FueledStove</li>
+            <li>ElectricStove</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ESCP_Egg_Sload</li>
+                    </thingDefs>
+                </filter>
+                <count>40</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>ESCP_Egg_Sload</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <ESCP_SloadSoap>20</ESCP_SloadSoap>
+        </products>
+    </RecipeDef>
+
+</Defs>
