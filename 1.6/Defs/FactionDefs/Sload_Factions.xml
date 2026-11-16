@@ -122,6 +122,18 @@
                 </options>
             </li>
         </pawnGroupMakers>
+        <modExtensions>
+            <li Class="ESCP.Enlist.FactionEnlistOptions">
+                <enlistOptionsDefs>
+                    <li>ESCP_Enlistment_SloadKingdom</li>
+                </enlistOptionsDefs>
+            </li>
+            <li Class="ESCP.Ranks.FactionExtension_RankTracks">
+                <rankTracks>
+                    <li>ESCP_RankTrack_SloadKingdom</li>
+                </rankTracks>
+            </li>
+        </modExtensions>
     </FactionDef>
 
     <FactionDef ParentName="PlayerFactionBase">

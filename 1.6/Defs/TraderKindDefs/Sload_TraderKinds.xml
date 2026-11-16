@@ -79,6 +79,19 @@
                 <thingDef>ESCP_Raw_Buoyant_Steel_Scraps</thingDef>
                 <countRange>20~60</countRange>
             </li>
+            <li Class="StockGenerator_Category">
+                <categoryDef>ESCP_Resources_Raw</categoryDef>
+                <thingDefCountRange>2~4</thingDefCountRange>
+                <totalPriceRange>150~500</totalPriceRange>
+            </li>
+            <li Class="StockGenerator_Tag">
+                <tradeTag>ESCP_ElementalSalts</tradeTag>
+                <thingDefCountRange>1~2</thingDefCountRange>
+                <countRange>4~12</countRange>
+            </li>
+            <li Class="StockGenerator_BuyTradeTag">
+                <tag>ESCP_Bullion</tag>
+            </li>
         </stockGenerators>
     </TraderKindDef>
 
@@ -123,6 +136,19 @@
                 <tradeTag>ESCP_SloadGoods</tradeTag>
                 <thingDefCountRange>1~1</thingDefCountRange>
                 <countRange>25~60</countRange>
+            </li>
+            <li Class="StockGenerator_Category">
+                <categoryDef>ESCP_Resources_Raw</categoryDef>
+                <thingDefCountRange>2~4</thingDefCountRange>
+                <totalPriceRange>150~500</totalPriceRange>
+            </li>
+            <li Class="StockGenerator_Tag">
+                <tradeTag>ESCP_ElementalSalts</tradeTag>
+                <thingDefCountRange>1~2</thingDefCountRange>
+                <countRange>4~12</countRange>
+            </li>
+            <li Class="StockGenerator_BuyTradeTag">
+                <tag>ESCP_Bullion</tag>
             </li>
         </stockGenerators>
     </TraderKindDef>
