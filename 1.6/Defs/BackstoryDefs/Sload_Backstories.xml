@@ -301,7 +301,7 @@
         <defName>ESCP_Backstory_Sload_StuffKnowledge_BuoyantSteel</defName>
         <title>master buoyant steel smith</title>
         <titleShort>master smith</titleShort>
-        <description>On one of [PAWN_nameDef]'s excursions into the abyss, they came across a shipwreck, and in that shipwreck, a strange metal. The metal seemed to be a magically infused alloy, far lighter than steel, yet stronger as well. Such a metal would make for good armour, [PAWN_nameDef] thought. And so [PAWN_nameDef] decided to spend a few decades studying it, hoping to learn how best to work it.\n\nAnything [PAWN_nameDef] crafts out of buoyant steel will be one quality level higher than normal.</description>
+        <description>On one of [PAWN_nameDef]'s excursions into the abyss, they came across a shipwreck, and in that shipwreck, a strange metal. The metal seemed to be a magically infused alloy, far lighter than steel, yet stronger as well. Such a metal would make for good armor, [PAWN_nameDef] thought. And so [PAWN_nameDef] decided to spend a few decades studying it, hoping to learn how best to work it.\n\nAnything [PAWN_nameDef] crafts out of buoyant steel will be one quality level higher than normal.</description>
         <slot>Adulthood</slot>
         <spawnCategories>
             <li>ESCP_Backstory_Sload_Adult</li>
